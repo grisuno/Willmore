@@ -1,0 +1,57 @@
+# Willmore Crystal Zero-Shot Grid Scaler Configuration
+# Optimized for 16GB RAM systems - scales up to 128x128
+# 
+# This configuration file controls the progressive scaling of a trained
+# Willmore Crystal model from grid_size=16 to 128.
+
+[scaler]
+# Source model configuration
+source_grid_size = 16
+# Maximum safe resolution for 16GB RAM
+target_grid_sizes = [32, 64, 128]
+checkpoint_path = "checkpoints_phase3/checkpoint_phase3_training_epoch_4767_20260225_193336.pth"
+output_dir = "scaled_models"
+device = "cpu"
+seed = 42
+
+[interpolation]
+# Weight interpolation settings
+# method: "fourier" - Fourier-space interpolation (preserves spectral structure)
+#         "bilinear" - Bilinear interpolation (faster, less accurate)
+method = "fourier"
+boundary_mode = "reflect"
+preserve_spectral_structure = true
+amplitude_normalization = true
+phase_preservation = true
+
+[validation]
+# Validation settings
+num_test_samples = 100
+compute_willmore_energy = true
+compute_curvature_metrics = true
+compute_spectral_metrics = true
+mse_threshold = 0.05
+
+[progressive]
+# Progressive scaling settings
+enable_progressive = true
+validate_each_step = true
+save_intermediate = true
+early_stop_on_degradation = true
+degradation_threshold = 0.5
+
+[metrics]
+# Metrics tracking settings
+track_willmore_energy = true
+track_mean_curvature = true
+track_gaussian_curvature = true
+track_surface_area = true
+track_spectral_concentration = true
+track_phase_coherence = true
+
+[output]
+# Output settings
+save_pytorch_format = true
+save_json_metrics = true
+save_detailed_report = true
+compress_checkpoints = false
