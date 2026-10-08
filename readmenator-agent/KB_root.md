@@ -1,0 +1,348 @@
+# Subsystem: root (page 1 of 2)
+Pages: [KB_root.md](KB_root.md), [KB_root_p2.md](KB_root_p2.md)
+
+## app.py
+- Doc: Autor: Gris Iscomeback Correo electrónico: grisiscomeback[at]gmail[dot]com Fecha de creación...
+- Layer: utility
+- Language: py
+
+## install.sh
+- Layer: utility
+- Language: sh
+
+## lol.py
+- Doc: DEMO HONESTA: Comparación de proyección esférica vs cilíndrica.
+- Layer: utility
+- Language: py
+- Symbols:
+  - `create_synthetic_rbc` (function, line 16) `def create_synthetic_rbc(n_vertices)`
+  - `spherical_projection` (function, line 44) `def spherical_projection(vertices, grid_size)`
+  - `cylindrical_projection` (function, line 76) `def cylindrical_projection(vertices, grid_size)`
+  - `spherical_to_cartesian` (function, line 123) `def spherical_to_cartesian(r_grid, grid_size)`
+  - `cylindrical_to_cartesian` (function, line 144) `def cylindrical_to_cartesian(rho_grid, z_min, z_max, grid_size)`
+  - `compute_metrics` (function, line 164) `def compute_metrics(r_grid, mask, original_r)`
+  - `save_obj` (function, line 181) `def save_obj(vertices, faces, filepath)`
+  - `main` (function, line 189) `def main()`
+
+## model_Reco.py
+- Doc: EVALUACIÓN PUNTO A PUNTO: Modelo evaluado en cada uno de los 9128 vértices sin pasar por grilla...
+- Layer: business_logic
+- Language: py
+- Symbols:
+  - `load_rbc_mesh` (function, line 27) `def load_rbc_mesh(vert_path, face_path)`
+  - `center_mesh` (function, line 49) `def center_mesh(vertices)`
+  - `cartesian_to_spherical` (function, line 54) `def cartesian_to_spherical(vertices)`
+  - `spherical_to_cartesian` (function, line 63) `def spherical_to_cartesian(r, theta, phi)`
+  - `evaluate_model_at_points` (function, line 70) `def evaluate_model_at_points(model, r_values, theta_values, phi_values, grid_size, device, r_global_mean)`
+  - `load_model` (function, line 134) `def load_model(checkpoint_path, device, config)`
+  - `compute_curvatures` (function, line 159) `def compute_curvatures(vertices, faces, grid_size)`
+  - `save_obj` (function, line 189) `def save_obj(vertices, faces, filepath)`
+  - `save_html_viewer` (function, line 197) `def save_html_viewer(orig_verts, orig_faces, pred_verts, pred_faces, output_path)`
+  - `main` (function, line 338) `def main()`
+- Depends on: `willmore_crsital2.py`
+
+## rbc.py
+- Doc: Red Blood Cell 3D Reconstruction USING THE TRAINED WILLMORE MODEL.
+- Layer: utility
+- Language: py
+- Symbols:
+  - `load_rbc_mesh` (function, line 30) `def load_rbc_mesh(vert_path, face_path)`
+  - `load_model` (function, line 53) `def load_model(checkpoint_path, device, config)`
+  - `project_rbc_to_spherical_grid` (function, line 94) `def project_rbc_to_spherical_grid(vertices, grid_size)`
+  - `spherical_grid_to_cartesian` (function, line 139) `def spherical_grid_to_cartesian(r_grid, grid_size, scale)`
+  - `run_model_evolution` (function, line 164) `def run_model_evolution(model, input_grid, steps, device)`
+  - `create_sphere_grid` (function, line 202) `def create_sphere_grid(grid_size, radius)`
+  - `create_biconcave_grid` (function, line 212) `def create_biconcave_grid(grid_size, radius)`
+  - `compute_willmore_on_grid` (function, line 224) `def compute_willmore_on_grid(surface, grid_size)`
+  - `save_obj` (function, line 231) `def save_obj(vertices, faces, filepath)`
+  - `save_html_comparison` (function, line 240) `def save_html_comparison(original_vertices, original_faces, rbc_grid_vertices, rbc_grid_faces, evolved_vertices...`
+  - `main` (function, line 393) `def main()`
+- Depends on: `willmore_crsital2.py`
+
+## rbc_model_reconstruction (1).py
+- Doc: Red Blood Cell 3D Reconstruction USING THE TRAINED WILLMORE MODEL.
+- Layer: business_logic
+- Language: py
+- Symbols:
+  - `load_rbc_mesh` (function, line 30) `def load_rbc_mesh(vert_path, face_path)`
+  - `load_model` (function, line 53) `def load_model(checkpoint_path, device, config)`
+  - `project_rbc_to_spherical_grid` (function, line 94) `def project_rbc_to_spherical_grid(vertices, grid_size)`
+  - `spherical_grid_to_cartesian` (function, line 139) `def spherical_grid_to_cartesian(r_grid, grid_size, scale)`
+  - `run_model_evolution` (function, line 164) `def run_model_evolution(model, input_grid, steps, device)`
+  - `create_sphere_grid` (function, line 202) `def create_sphere_grid(grid_size, radius)`
+  - `create_biconcave_grid` (function, line 212) `def create_biconcave_grid(grid_size, radius)`
+  - `compute_willmore_on_grid` (function, line 224) `def compute_willmore_on_grid(surface, grid_size)`
+  - `save_obj` (function, line 231) `def save_obj(vertices, faces, filepath)`
+  - `save_html_comparison` (function, line 240) `def save_html_comparison(original_vertices, original_faces, rbc_grid_vertices, rbc_grid_faces, evolved_vertices...`
+  - `main` (function, line 393) `def main()`
+- Depends on: `willmore_crsital2.py`
+
+## rbc_model_reconstruction.py
+- Doc: Red Blood Cell 3D Reconstruction USING THE TRAINED WILLMORE MODEL.
+- Layer: business_logic
+- Language: py
+- Symbols:
+  - `load_rbc_mesh` (function, line 31) `def load_rbc_mesh(vert_path, face_path)`
+  - `compute_vertex_normals` (function, line 54) `def compute_vertex_normals(vertices, faces)`
+  - `compute_face_areas` (function, line 75) `def compute_face_areas(vertices, faces)`
+  - `load_model` (function, line 84) `def load_model(checkpoint_path, device, config)`
+  - `create_local_patches_for_vertices` (function, line 124) `def create_local_patches_for_vertices(vertices, faces, normals, grid_size)`
+  - `run_model_on_patches` (function, line 215) `def run_model_on_patches(model, patches_real, patches_imag, device, grid_size, batch_size)`
+  - `compute_analytical_curvature` (function, line 252) `def compute_analytical_curvature(vertices, faces)`
+  - `save_ply_with_values` (function, line 284) `def save_ply_with_values(vertices, faces, normals, values, filepath, value_name)`
+  - `save_html_viewer` (function, line 319) `def save_html_viewer(vertices, faces, normals, model_curvature, analytical_curvature, output_path)`
+  - `main` (function, line 530) `def main()`
+- Depends on: `willmore_crsital2.py`
+
+## rbc_model_reconstruction_128.py
+- Doc: Red Blood Cell 3D Reconstruction USING THE SCALED WILLMORE MODEL at 128x128.
+- Layer: business_logic
+- Language: py
+- Symbols:
+  - `ReconstructionConfig` (class, line 37) `class ReconstructionConfig`
+  - `SpectralLayer` (class, line 51) `class SpectralLayer(Module)`
+  - `MinimalSurfaceSpectralNetwork` (class, line 85) `class MinimalSurfaceSpectralNetwork(Module)`
+  - `CheckpointLoader` (class, line 120) `class CheckpointLoader`
+  - `ModelBuilder` (class, line 130) `class ModelBuilder`
+  - `RBCMeshLoader` (class, line 169) `class RBCMeshLoader`
+  - `ImprovedSphericalProjector` (class, line 195) `class ImprovedSphericalProjector`
+  - `CylindricalProjector` (class, line 377) `class CylindricalProjector`
+  - `SyntheticShapeGenerator` (class, line 469) `class SyntheticShapeGenerator`
+  - `WillmoreMetricsCalculator` (class, line 514) `class WillmoreMetricsCalculator`
+  - `SurfaceEvolver` (class, line 542) `class SurfaceEvolver`
+  - `MeshExporter` (class, line 589) `class MeshExporter`
+  - `RBCReconstructionPipeline` (class, line 757) `class RBCReconstructionPipeline`
+  - `build_argument_parser` (method, line 926) `def build_argument_parser()`
+  - `main` (method, line 989) `def main()`
+  - `__init__` (method, line 54) `def __init__(self, channels, grid_size)`
+  - `forward` (method, line 65) `def forward(self, x)`
+  - `__init__` (method, line 88) `def __init__(self, grid_size, hidden_dim, expansion_dim, num_spectral_layers, input_channels, output_channels)`
+  - `forward` (method, line 109) `def forward(self, x)`
+  - `load` (method, line 124) `def load(checkpoint_path, device)`
+  - `build` (method, line 134) `def build(config)`
+  - `load_from_checkpoint` (method, line 145) `def load_from_checkpoint(checkpoint_path, config)`
+  - `load` (method, line 173) `def load(vert_path, face_path)`
+  - `__init__` (method, line 206) `def __init__(self, grid_size, smoothing_sigma)`
+  - `compute_vertex_areas` (method, line 214) `def compute_vertex_areas(self, vertices, faces)`
+  - `project_mesh` (method, line 229) `def project_mesh(self, vertices, faces, use_rbf)`
+  - `_area_weighted_projection` (method, line 267) `def _area_weighted_projection(self, theta, phi, r, areas)`
+  - `_rbf_interpolation` (method, line 300) `def _rbf_interpolation(self, theta, phi, r)`
+  - `_apply_spherical_smoothing` (method, line 330) `def _apply_spherical_smoothing(self, r_grid)`
+  - `to_cartesian` (method, line 352) `def to_cartesian(self, r_grid, scale)`
+  - `__init__` (method, line 385) `def __init__(self, grid_size, smoothing_sigma)`
+  - `project_mesh` (method, line 393) `def project_mesh(self, vertices, faces)`
+  - `to_cartesian` (method, line 442) `def to_cartesian(self, rho_grid, z_scale, rho_scale)`
+  - `__init__` (method, line 472) `def __init__(self, grid_size)`
+  - `create_sphere` (method, line 478) `def create_sphere(self, radius)`
+  - `create_biconcave` (method, line 481) `def create_biconcave(self, radius, dimple_depth)`
+  - `create_evans_fung_rbc` (method, line 487) `def create_evans_fung_rbc(self, radius, dimple_depth, thickness)`
+  - `__init__` (method, line 517) `def __init__(self, grid_size)`
+  - `compute_willmore` (method, line 520) `def compute_willmore(self, surface)`
+  - `compute_curvature_stats` (method, line 524) `def compute_curvature_stats(self, surface)`
+  - `__init__` (method, line 545) `def __init__(self, model, config)`
+  - `evolve` (method, line 553) `def evolve(self, initial_surface)`
+  - `save_obj` (method, line 593) `def save_obj(vertices, faces, filepath)`
+  - `save_html_comparison` (method, line 602) `def save_html_comparison(original_vertices, original_faces, projected_vertices, projected_faces, evolved_vertices...`
+  - `__init__` (method, line 760) `def __init__(self, config)`
+  - `run` (method, line 771) `def run(self, checkpoint_path, vert_path, face_path, output_dir, projection_type)`
+- Depends on: `willmore_crsital2.py`
+
+## rbc_willmore_analysis.py
+- Doc: Author: Gris Iscomeback Email: grisiscomeback@gmail.com Date: 2026 License: AGPL v3...
+- Layer: utility
+- Language: py
+- Symbols:
+  - `RBCAnalysisConfig` (class, line 55) `class RBCAnalysisConfig`
+  - `ILogger` (class, line 102) `class ILogger(ABC)`
+  - `StandardLogger` (class, line 122) `class StandardLogger(ILogger)`
+  - `IFileSystem` (class, line 149) `class IFileSystem(ABC)`
+  - `StandardFileSystem` (class, line 169) `class StandardFileSystem(IFileSystem)`
+  - `MeshData` (class, line 188) `class MeshData`
+  - `IMeshLoader` (class, line 228) `class IMeshLoader(ABC)`
+  - `OpenRBCMeshLoader` (class, line 236) `class OpenRBCMeshLoader(IMeshLoader)`
+  - `SyntheticMeshGenerator` (class, line 375) `class SyntheticMeshGenerator`
+  - `ICurvatureCalculator` (class, line 545) `class ICurvatureCalculator(ABC)`
+  - `DiscreteCurvatureCalculator` (class, line 563) `class DiscreteCurvatureCalculator(ICurvatureCalculator)`
+  - `SpectralLayer` (class, line 799) `class SpectralLayer(Module)`
+  - `MinimalSurfaceSpectralNetwork` (class, line 848) `class MinimalSurfaceSpectralNetwork(Module)`
+  - `IModelLoader` (class, line 894) `class IModelLoader(ABC)`
+  - `CheckpointModelLoader` (class, line 902) `class CheckpointModelLoader(IModelLoader)`
+  - `SurfaceAnalysisEngine` (class, line 1002) `class SurfaceAnalysisEngine`
+  - `parse_arguments` (method, line 1376) `def parse_arguments()`
+  - `create_config_from_args` (method, line 1470) `def create_config_from_args(args)`
+  - `main` (method, line 1488) `def main()`
+  - `info` (method, line 106) `def info(self, message)`
+  - `warning` (method, line 110) `def warning(self, message)`
+  - `error` (method, line 114) `def error(self, message)`
+  - `debug` (method, line 118) `def debug(self, message)`
+  - `__init__` (method, line 125) `def __init__(self, name, level)`
+  - `info` (method, line 136) `def info(self, message)`
+  - `warning` (method, line 139) `def warning(self, message)`
+  - `error` (method, line 142) `def error(self, message)`
+  - `debug` (method, line 145) `def debug(self, message)`
+  - `exists` (method, line 153) `def exists(self, path)`
+  - `read_text` (method, line 157) `def read_text(self, path)`
+  - `write_text` (method, line 161) `def write_text(self, path, content)`
+  - `makedirs` (method, line 165) `def makedirs(self, path)`
+  - `exists` (method, line 172) `def exists(self, path)`
+  - `read_text` (method, line 175) `def read_text(self, path)`
+  - `write_text` (method, line 179) `def write_text(self, path, content)`
+  - `makedirs` (method, line 183) `def makedirs(self, path)`
+  - `num_vertices` (method, line 206) `def num_vertices(self)`
+  - `num_faces` (method, line 210) `def num_faces(self)`
+  - `num_bonds` (method, line 214) `def num_bonds(self)`
+  - `to_dict` (method, line 217) `def to_dict(self)`
+  - `load` (method, line 232) `def load(self, vert_path, face_path, bond_path)`
+  - `__init__` (method, line 245) `def __init__(self, filesystem, logger)`
+  - `load` (method, line 249) `def load(self, vert_path, face_path, bond_path)`
+  - `_load_vertices` (method, line 267) `def _load_vertices(self, path)`
+  - `_load_faces` (method, line 286) `def _load_faces(self, path)`
+  - `_load_bonds` (method, line 308) `def _load_bonds(self, path)`
+  - `_compute_normals` (method, line 330) `def _compute_normals(self, mesh)`
+  - `_compute_areas` (method, line 355) `def _compute_areas(self, mesh)`
+  - `__init__` (method, line 382) `def __init__(self, logger)`
+  - `generate_sphere` (method, line 385) `def generate_sphere(self, radius, resolution)`
+  - `generate_torus` (method, line 424) `def generate_torus(self, R, r, resolution)`
+  - `generate_biconcave_disc` (method, line 467) `def generate_biconcave_disc(self, radius, thickness, resolution)`
+  - `_compute_mesh_properties` (method, line 511) `def _compute_mesh_properties(self, mesh)`
+  - `compute_mean_curvature` (method, line 549) `def compute_mean_curvature(self, mesh)`
+  - `compute_gaussian_curvature` (method, line 553) `def compute_gaussian_curvature(self, mesh)`
+  - `compute_willmore_energy` (method, line 557) `def compute_willmore_energy(self, mesh, mean_curvature)`
+  - `__init__` (method, line 578) `def __init__(self, logger)`
+  - `compute_mean_curvature` (method, line 581) `def compute_mean_curvature(self, mesh)`
+  - `compute_gaussian_curvature` (method, line 616) `def compute_gaussian_curvature(self, mesh)`
+  - `compute_willmore_energy` (method, line 664) `def compute_willmore_energy(self, mesh, mean_curvature)`
+  - `_compute_edge_cotangents` (method, line 682) `def _compute_edge_cotangents(self, mesh)`
+  - `_get_vertex_neighbors` (method, line 737) `def _get_vertex_neighbors(self, vertex_idx, faces)`
+  - `_compute_mixed_voronoi_area` (method, line 748) `def _compute_mixed_voronoi_area(self, vertex_idx, neighbors, vertices, faces)`
+  - `__init__` (method, line 806) `def __init__(self, channels, grid_size)`
+  - `forward` (method, line 820) `def forward(self, x)`
+  - `__init__` (method, line 855) `def __init__(self, grid_size, hidden_dim, expansion_dim, num_spectral_layers, input_channels, output_channels)`
+  - `forward` (method, line 880) `def forward(self, x)`
+  - `load` (method, line 898) `def load(self, checkpoint_path, device, config)`
+  - `__init__` (method, line 905) `def __init__(self, filesystem, logger)`
+  - `_detect_model_params` (method, line 909) `def _detect_model_params(self, state_dict)`
+  - `load` (method, line 947) `def load(self, checkpoint_path, device, config)`
+  - `__init__` (method, line 1009) `def __init__(self, config, logger, filesystem)`
+  - `initialize` (method, line 1028) `def initialize(self)`
+  - `_load_rbc_mesh` (method, line 1048) `def _load_rbc_mesh(self)`
+  - `_generate_synthetic_meshes` (method, line 1060) `def _generate_synthetic_meshes(self)`
+  - `analyze_mesh` (method, line 1076) `def analyze_mesh(self, mesh, name)`
+  - `_compute_surface_area` (method, line 1125) `def _compute_surface_area(self, mesh)`
+  - `_compute_volume` (method, line 1130) `def _compute_volume(self, mesh)`
+  - `_compute_asphericity` (method, line 1141) `def _compute_asphericity(self, mesh)`
+  - `_compute_biconcavity_index` (method, line 1161) `def _compute_biconcavity_index(self, mesh, mean_curvature)`
+  - `_compute_histogram` (method, line 1186) `def _compute_histogram(self, data, bins)`
+  - `run_shape_emergence_test` (method, line 1192) `def run_shape_emergence_test(self)`
+  - `_analyze_rbc_morphology` (method, line 1235) `def _analyze_rbc_morphology(self)`
+  - `_verify_gauss_bonnet` (method, line 1277) `def _verify_gauss_bonnet(self)`
+  - `run_mean_curvature_flow` (method, line 1318) `def run_mean_curvature_flow(self, mesh, steps, dt)`
+  - `save_results` (method, line 1357) `def save_results(self, results, filename)`
+  - `save_mesh_obj` (method, line 1362) `def save_mesh_obj(self, mesh, filename)`
+
+## rbc_willmore_analysis2.py
+- Doc: Author: Gris Iscomeback Email: grisiscomeback@gmail.com Date: 2026 License: AGPL v3...
+- Layer: utility
+- Language: py
+- Symbols:
+  - `RBCAnalysisConfig` (class, line 55) `class RBCAnalysisConfig`
+  - `ILogger` (class, line 102) `class ILogger(ABC)`
+  - `StandardLogger` (class, line 122) `class StandardLogger(ILogger)`
+  - `IFileSystem` (class, line 149) `class IFileSystem(ABC)`
+  - `StandardFileSystem` (class, line 169) `class StandardFileSystem(IFileSystem)`
+  - `MeshData` (class, line 188) `class MeshData`
+  - `IMeshLoader` (class, line 228) `class IMeshLoader(ABC)`
+  - `OpenRBCMeshLoader` (class, line 236) `class OpenRBCMeshLoader(IMeshLoader)`
+  - `SyntheticMeshGenerator` (class, line 375) `class SyntheticMeshGenerator`
+  - `ICurvatureCalculator` (class, line 545) `class ICurvatureCalculator(ABC)`
+  - `DiscreteCurvatureCalculator` (class, line 563) `class DiscreteCurvatureCalculator(ICurvatureCalculator)`
+  - `SpectralLayer` (class, line 799) `class SpectralLayer(Module)`
+  - `MinimalSurfaceSpectralNetwork` (class, line 848) `class MinimalSurfaceSpectralNetwork(Module)`
+  - `IModelLoader` (class, line 894) `class IModelLoader(ABC)`
+  - `CheckpointModelLoader` (class, line 902) `class CheckpointModelLoader(IModelLoader)`
+  - `SurfaceAnalysisEngine` (class, line 1002) `class SurfaceAnalysisEngine`
+  - `parse_arguments` (method, line 1394) `def parse_arguments()`
+  - `create_config_from_args` (method, line 1488) `def create_config_from_args(args)`
+  - `main` (method, line 1506) `def main()`
+  - `info` (method, line 106) `def info(self, message)`
+  - `warning` (method, line 110) `def warning(self, message)`
+  - `error` (method, line 114) `def error(self, message)`
+  - `debug` (method, line 118) `def debug(self, message)`
+  - `__init__` (method, line 125) `def __init__(self, name, level)`
+  - `info` (method, line 136) `def info(self, message)`
+  - `warning` (method, line 139) `def warning(self, message)`
+  - `error` (method, line 142) `def error(self, message)`
+  - `debug` (method, line 145) `def debug(self, message)`
+  - `exists` (method, line 153) `def exists(self, path)`
+  - `read_text` (method, line 157) `def read_text(self, path)`
+  - `write_text` (method, line 161) `def write_text(self, path, content)`
+  - `makedirs` (method, line 165) `def makedirs(self, path)`
+  - `exists` (method, line 172) `def exists(self, path)`
+  - `read_text` (method, line 175) `def read_text(self, path)`
+  - `write_text` (method, line 179) `def write_text(self, path, content)`
+  - `makedirs` (method, line 183) `def makedirs(self, path)`
+  - `num_vertices` (method, line 206) `def num_vertices(self)`
+  - `num_faces` (method, line 210) `def num_faces(self)`
+  - `num_bonds` (method, line 214) `def num_bonds(self)`
+  - `to_dict` (method, line 217) `def to_dict(self)`
+  - `load` (method, line 232) `def load(self, vert_path, face_path, bond_path)`
+  - `__init__` (method, line 245) `def __init__(self, filesystem, logger)`
+  - `load` (method, line 249) `def load(self, vert_path, face_path, bond_path)`
+  - `_load_vertices` (method, line 267) `def _load_vertices(self, path)`
+  - `_load_faces` (method, line 286) `def _load_faces(self, path)`
+  - `_load_bonds` (method, line 308) `def _load_bonds(self, path)`
+  - `_compute_normals` (method, line 330) `def _compute_normals(self, mesh)`
+  - `_compute_areas` (method, line 355) `def _compute_areas(self, mesh)`
+  - `__init__` (method, line 382) `def __init__(self, logger)`
+  - `generate_sphere` (method, line 385) `def generate_sphere(self, radius, resolution)`
+  - `generate_torus` (method, line 424) `def generate_torus(self, R, r, resolution)`
+  - `generate_biconcave_disc` (method, line 467) `def generate_biconcave_disc(self, radius, thickness, resolution)`
+  - `_compute_mesh_properties` (method, line 511) `def _compute_mesh_properties(self, mesh)`
+  - `compute_mean_curvature` (method, line 549) `def compute_mean_curvature(self, mesh)`
+  - `compute_gaussian_curvature` (method, line 553) `def compute_gaussian_curvature(self, mesh)`
+  - `compute_willmore_energy` (method, line 557) `def compute_willmore_energy(self, mesh, mean_curvature)`
+  - `__init__` (method, line 578) `def __init__(self, logger)`
+  - `compute_mean_curvature` (method, line 581) `def compute_mean_curvature(self, mesh)`
+  - `compute_gaussian_curvature` (method, line 616) `def compute_gaussian_curvature(self, mesh)`
+  - `compute_willmore_energy` (method, line 664) `def compute_willmore_energy(self, mesh, mean_curvature)`
+  - `_compute_edge_cotangents` (method, line 682) `def _compute_edge_cotangents(self, mesh)`
+  - `_get_vertex_neighbors` (method, line 737) `def _get_vertex_neighbors(self, vertex_idx, faces)`
+  - `_compute_mixed_voronoi_area` (method, line 748) `def _compute_mixed_voronoi_area(self, vertex_idx, neighbors, vertices, faces)`
+  - `__init__` (method, line 806) `def __init__(self, channels, grid_size)`
+  - `forward` (method, line 820) `def forward(self, x)`
+  - `__init__` (method, line 855) `def __init__(self, grid_size, hidden_dim, expansion_dim, num_spectral_layers, input_channels, output_channels)`
+  - `forward` (method, line 880) `def forward(self, x)`
+  - `load` (method, line 898) `def load(self, checkpoint_path, device, config)`
+  - `__init__` (method, line 905) `def __init__(self, filesystem, logger)`
+  - `_detect_model_params` (method, line 909) `def _detect_model_params(self, state_dict)`
+  - `load` (method, line 947) `def load(self, checkpoint_path, device, config)`
+  - `__init__` (method, line 1009) `def __init__(self, config, logger, filesystem)`
+  - `initialize` (method, line 1028) `def initialize(self)`
+  - `_load_rbc_mesh` (method, line 1048) `def _load_rbc_mesh(self)`
+  - `_generate_synthetic_meshes` (method, line 1060) `def _generate_synthetic_meshes(self)`
+  - `analyze_mesh` (method, line 1076) `def analyze_mesh(self, mesh, name)`
+  - `_compute_surface_area` (method, line 1125) `def _compute_surface_area(self, mesh)`
+  - `_compute_volume` (method, line 1130) `def _compute_volume(self, mesh)`
+  - `_compute_asphericity` (method, line 1141) `def _compute_asphericity(self, mesh)`
+  - `_compute_biconcavity_index` (method, line 1161) `def _compute_biconcavity_index(self, mesh, mean_curvature)`
+  - `_compute_histogram` (method, line 1186) `def _compute_histogram(self, data, bins)`
+  - `run_shape_emergence_test` (method, line 1192) `def run_shape_emergence_test(self)`
+  - `_analyze_rbc_morphology` (method, line 1235) `def _analyze_rbc_morphology(self)`
+  - `_verify_gauss_bonnet` (method, line 1277) `def _verify_gauss_bonnet(self)`
+  - `run_mean_curvature_flow` (method, line 1318) `def run_mean_curvature_flow(self, mesh, steps, dt)`
+  - `save_results` (method, line 1357) `def save_results(self, results, filename)`
+  - `save_mesh_obj` (method, line 1380) `def save_mesh_obj(self, mesh, filename)`
+  - `convert_to_native` (method, line 1360) `def convert_to_native(obj)`
+
+## test.py
+- Doc: Diagnóstico CORREGIDO: El modelo SÍ aprendió, pero trabaja en escala pequeña.
+- Layer: testing
+- Language: py
+- Symbols:
+  - `load_model` (function, line 20) `def load_model(checkpoint_path, device)`
+  - `test_model_behavior` (function, line 45) `def test_model_behavior(model, config, device)`
+  - `main` (function, line 154) `def main()`
+- Depends on: `willmore_crsital2.py`
+
+
+Next: [KB_root_p2.md](KB_root_p2.md)
