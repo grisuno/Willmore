@@ -1,0 +1,120 @@
+# Concepts
+
+Nouns map atomically to file sets (EXTRACTED); verbs aggregate structural edges (INFERRED).
+
+- `compute` | files=12 | mentions=112 | `lol.py`, `model_Reco.py`, `rbc.py`, `rbc_model_reconstruction (1).py`, `rbc_model_reconstruction.py`, `rbc_model_reconstruction_128.py`, `rbc_willmore_analysis.py`, `rbc_willmore_analysis2.py`, `willmore_crsital2.py`, `willmore_crystallography_suite.py.py`
+- `load` | files=12 | mentions=46 | `model_Reco.py`, `rbc.py`, `rbc_model_reconstruction (1).py`, `rbc_model_reconstruction.py`, `rbc_model_reconstruction_128.py`, `rbc_willmore_analysis.py`, `rbc_willmore_analysis2.py`, `test.py`, `willmore_crsital2.py`, `willmore_crystallography_suite.py.py`
+- `model` | files=11 | mentions=88 | `model_Reco.py`, `rbc.py`, `rbc_model_reconstruction (1).py`, `rbc_model_reconstruction.py`, `rbc_model_reconstruction_128.py`, `rbc_willmore_analysis.py`, `rbc_willmore_analysis2.py`, `test.py`, `willmore_crystallography_suite.py.py`, `willmore_zero_shot_scaler.py`
+- `save` | files=11 | mentions=30 | `lol.py`, `model_Reco.py`, `rbc.py`, `rbc_model_reconstruction (1).py`, `rbc_model_reconstruction.py`, `rbc_model_reconstruction_128.py`, `rbc_willmore_analysis.py`, `rbc_willmore_analysis2.py`, `willmore_crsital2.py`, `willmore_zero_shot_scaler.py`
+- `willmore` | files=10 | mentions=72 | `rbc.py`, `rbc_model_reconstruction (1).py`, `rbc_model_reconstruction.py`, `rbc_model_reconstruction_128.py`, `rbc_willmore_analysis.py`, `rbc_willmore_analysis2.py`, `willmore_crsital2.py`, `willmore_crystallography_suite.py.py`, `willmore_zero_shot_scaler.py`, `wilmore_rbc.py`
+- `surface` | files=10 | mentions=61 | `rbc.py`, `rbc_model_reconstruction (1).py`, `rbc_model_reconstruction.py`, `rbc_model_reconstruction_128.py`, `rbc_willmore_analysis.py`, `rbc_willmore_analysis2.py`, `willmore_crsital2.py`, `willmore_crystallography_suite.py.py`, `willmore_zero_shot_scaler.py`, `wilmore_rbc.py`
+- `checkpoint` | files=10 | mentions=30 | `rbc.py`, `rbc_model_reconstruction (1).py`, `rbc_model_reconstruction.py`, `rbc_model_reconstruction_128.py`, `rbc_willmore_analysis.py`, `rbc_willmore_analysis2.py`, `willmore_crsital2.py`, `willmore_crystallography_suite.py.py`, `willmore_zero_shot_scaler.py`, `wilmore_rbc.py`
+- `create` | files=10 | mentions=30 | `lol.py`, `rbc.py`, `rbc_model_reconstruction (1).py`, `rbc_model_reconstruction.py`, `rbc_model_reconstruction_128.py`, `rbc_willmore_analysis.py`, `rbc_willmore_analysis2.py`, `willmore_crsital2.py`, `willmore_zero_shot_scaler.py`, `wilmore_rbc.py`
+- `rbc` | files=9 | mentions=94 | `lol.py`, `model_Reco.py`, `rbc.py`, `rbc_model_reconstruction (1).py`, `rbc_model_reconstruction.py`, `rbc_model_reconstruction_128.py`, `rbc_willmore_analysis.py`, `rbc_willmore_analysis2.py`, `wilmore_rbc.py`
+- `using` | files=9 | mentions=33 | `model_Reco.py`, `rbc.py`, `rbc_model_reconstruction (1).py`, `rbc_model_reconstruction.py`, `rbc_model_reconstruction_128.py`, `rbc_willmore_analysis.py`, `rbc_willmore_analysis2.py`, `willmore_zero_shot_scaler.py`, `wilmore_rbc.py`
+- `energy` | files=9 | mentions=31 | `rbc.py`, `rbc_model_reconstruction (1).py`, `rbc_model_reconstruction.py`, `rbc_model_reconstruction_128.py`, `rbc_willmore_analysis.py`, `rbc_willmore_analysis2.py`, `willmore_crsital2.py`, `willmore_crystallography_suite.py.py`, `wilmore_rbc.py`
+- `minimal` | files=9 | mentions=31 | `rbc.py`, `rbc_model_reconstruction (1).py`, `rbc_model_reconstruction_128.py`, `rbc_willmore_analysis.py`, `rbc_willmore_analysis2.py`, `willmore_crsital2.py`, `willmore_crystallography_suite.py.py`, `willmore_zero_shot_scaler.py`, `wilmore_rbc.py`
+- `run` | files=9 | mentions=22 | `rbc.py`, `rbc_model_reconstruction (1).py`, `rbc_model_reconstruction.py`, `rbc_model_reconstruction_128.py`, `rbc_willmore_analysis.py`, `rbc_willmore_analysis2.py`, `willmore_crsital2.py`, `willmore_crystallography_suite.py.py`, `wilmore_rbc.py`
+- `mesh` | files=8 | mentions=56 | `model_Reco.py`, `rbc.py`, `rbc_model_reconstruction (1).py`, `rbc_model_reconstruction.py`, `rbc_model_reconstruction_128.py`, `rbc_willmore_analysis.py`, `rbc_willmore_analysis2.py`, `wilmore_rbc.py`
+- `curvature` | files=8 | mentions=53 | `rbc_model_reconstruction.py`, `rbc_model_reconstruction_128.py`, `rbc_willmore_analysis.py`, `rbc_willmore_analysis2.py`, `willmore_crsital2.py`, `willmore_crystallography_suite.py.py`, `willmore_zero_shot_scaler.py`, `wilmore_rbc.py`
+- `trained` | files=8 | mentions=11 | `rbc.py`, `rbc_model_reconstruction (1).py`, `rbc_model_reconstruction.py`, `rbc_model_reconstruction_128.py`, `rbc_willmore_analysis.py`, `rbc_willmore_analysis2.py`, `willmore_zero_shot_scaler.py`, `wilmore_rbc.py`
+- `obj` | files=8 | mentions=10 | `lol.py`, `model_Reco.py`, `rbc.py`, `rbc_model_reconstruction (1).py`, `rbc_model_reconstruction_128.py`, `rbc_willmore_analysis.py`, `rbc_willmore_analysis2.py`, `wilmore_rbc.py`
+- `spectral` | files=7 | mentions=48 | `rbc_model_reconstruction_128.py`, `rbc_willmore_analysis.py`, `rbc_willmore_analysis2.py`, `willmore_crsital2.py`, `willmore_crystallography_suite.py.py`, `willmore_zero_shot_scaler.py`, `wilmore_rbc.py`
+- `reconstruction` | files=7 | mentions=29 | `model_Reco.py`, `rbc.py`, `rbc_model_reconstruction (1).py`, `rbc_model_reconstruction.py`, `rbc_model_reconstruction_128.py`, `willmore_crystallography_suite.py.py`, `wilmore_rbc.py`
+- `shape` | files=7 | mentions=23 | `rbc.py`, `rbc_model_reconstruction (1).py`, `rbc_model_reconstruction_128.py`, `rbc_willmore_analysis.py`, `rbc_willmore_analysis2.py`, `willmore_zero_shot_scaler.py`, `wilmore_rbc.py`
+- `open` | files=7 | mentions=14 | `rbc.py`, `rbc_model_reconstruction (1).py`, `rbc_model_reconstruction.py`, `rbc_model_reconstruction_128.py`, `rbc_willmore_analysis.py`, `rbc_willmore_analysis2.py`, `wilmore_rbc.py`
+- `comparison` | files=7 | mentions=13 | `rbc.py`, `rbc_model_reconstruction (1).py`, `rbc_model_reconstruction.py`, `rbc_model_reconstruction_128.py`, `rbc_willmore_analysis.py`, `rbc_willmore_analysis2.py`, `wilmore_rbc.py`
+- `vertices` | files=7 | mentions=13 | `rbc.py`, `rbc_model_reconstruction (1).py`, `rbc_model_reconstruction.py`, `rbc_model_reconstruction_128.py`, `rbc_willmore_analysis.py`, `rbc_willmore_analysis2.py`, `wilmore_rbc.py`
+- `config` | files=7 | mentions=12 | `rbc_model_reconstruction_128.py`, `rbc_willmore_analysis.py`, `rbc_willmore_analysis2.py`, `willmore_crsital2.py`, `willmore_crystallography_suite.py.py`, `willmore_zero_shot_scaler.py`, `wilmore_rbc.py`
+- `files` | files=7 | mentions=11 | `rbc.py`, `rbc_model_reconstruction (1).py`, `rbc_model_reconstruction.py`, `rbc_model_reconstruction_128.py`, `rbc_willmore_analysis.py`, `rbc_willmore_analysis2.py`, `wilmore_rbc.py`
+- `all` | files=7 | mentions=9 | `rbc.py`, `rbc_model_reconstruction (1).py`, `rbc_model_reconstruction.py`, `rbc_willmore_analysis.py`, `rbc_willmore_analysis2.py`, `willmore_crsital2.py`, `willmore_crystallography_suite.py.py`
+- `blood` | files=7 | mentions=9 | `rbc.py`, `rbc_model_reconstruction (1).py`, `rbc_model_reconstruction.py`, `rbc_model_reconstruction_128.py`, `rbc_willmore_analysis.py`, `rbc_willmore_analysis2.py`, `wilmore_rbc.py`
+- `cell` | files=7 | mentions=9 | `rbc.py`, `rbc_model_reconstruction (1).py`, `rbc_model_reconstruction.py`, `rbc_model_reconstruction_128.py`, `rbc_willmore_analysis.py`, `rbc_willmore_analysis2.py`, `wilmore_rbc.py`
+- `red` | files=7 | mentions=9 | `rbc.py`, `rbc_model_reconstruction (1).py`, `rbc_model_reconstruction.py`, `rbc_model_reconstruction_128.py`, `rbc_willmore_analysis.py`, `rbc_willmore_analysis2.py`, `wilmore_rbc.py`
+- `operator` | files=7 | mentions=7 | `model_Reco.py`, `rbc.py`, `rbc_model_reconstruction (1).py`, `rbc_willmore_analysis.py`, `rbc_willmore_analysis2.py`, `willmore_crsital2.py`, `willmore_crystallography_suite.py.py`
+- `grid` | files=6 | mentions=39 | `rbc.py`, `rbc_model_reconstruction (1).py`, `rbc_model_reconstruction.py`, `rbc_model_reconstruction_128.py`, `willmore_zero_shot_scaler.py`, `wilmore_rbc.py`
+- `metrics` | files=6 | mentions=36 | `lol.py`, `rbc_model_reconstruction_128.py`, `willmore_crsital2.py`, `willmore_crystallography_suite.py.py`, `willmore_zero_shot_scaler.py`, `wilmore_rbc.py`
+- `spherical` | files=6 | mentions=35 | `lol.py`, `model_Reco.py`, `rbc.py`, `rbc_model_reconstruction (1).py`, `rbc_model_reconstruction_128.py`, `wilmore_rbc.py`
+- `biconcave` | files=6 | mentions=22 | `rbc.py`, `rbc_model_reconstruction (1).py`, `rbc_model_reconstruction_128.py`, `rbc_willmore_analysis.py`, `rbc_willmore_analysis2.py`, `wilmore_rbc.py`
+- `calculator` | files=6 | mentions=21 | `rbc_model_reconstruction_128.py`, `rbc_willmore_analysis.py`, `rbc_willmore_analysis2.py`, `willmore_crsital2.py`, `willmore_crystallography_suite.py.py`, `wilmore_rbc.py`
+- `area` | files=6 | mentions=20 | `rbc_model_reconstruction_128.py`, `rbc_willmore_analysis.py`, `rbc_willmore_analysis2.py`, `willmore_crsital2.py`, `willmore_crystallography_suite.py.py`, `wilmore_rbc.py`
+- `configuration` | files=6 | mentions=16 | `rbc_model_reconstruction_128.py`, `rbc_willmore_analysis.py`, `rbc_willmore_analysis2.py`, `willmore_crystallography_suite.py.py`, `willmore_zero_shot_scaler.py`, `wilmore_rbc.py`
+- `network` | files=6 | mentions=16 | `rbc_model_reconstruction_128.py`, `rbc_willmore_analysis.py`, `rbc_willmore_analysis2.py`, `willmore_crsital2.py`, `willmore_crystallography_suite.py.py`, `wilmore_rbc.py`
+- `geometry` | files=6 | mentions=15 | `rbc_model_reconstruction_128.py`, `rbc_willmore_analysis.py`, `rbc_willmore_analysis2.py`, `willmore_crsital2.py`, `willmore_crystallography_suite.py.py`, `wilmore_rbc.py`
+- `gaussian` | files=6 | mentions=14 | `rbc_model_reconstruction_128.py`, `rbc_willmore_analysis.py`, `rbc_willmore_analysis2.py`, `willmore_crsital2.py`, `willmore_crystallography_suite.py.py`, `wilmore_rbc.py`
+- `forward` | files=6 | mentions=13 | `rbc_model_reconstruction_128.py`, `rbc_willmore_analysis.py`, `rbc_willmore_analysis2.py`, `willmore_crsital2.py`, `willmore_crystallography_suite.py.py`, `wilmore_rbc.py`
+- `layer` | files=6 | mentions=12 | `rbc_model_reconstruction_128.py`, `rbc_willmore_analysis.py`, `rbc_willmore_analysis2.py`, `willmore_crsital2.py`, `willmore_crystallography_suite.py.py`, `wilmore_rbc.py`
+- `cartesian` | files=6 | mentions=10 | `lol.py`, `model_Reco.py`, `rbc.py`, `rbc_model_reconstruction (1).py`, `rbc_model_reconstruction_128.py`, `wilmore_rbc.py`
+- `sphere` | files=6 | mentions=10 | `rbc.py`, `rbc_model_reconstruction (1).py`, `rbc_model_reconstruction_128.py`, `rbc_willmore_analysis.py`, `rbc_willmore_analysis2.py`, `wilmore_rbc.py`
+- `html` | files=6 | mentions=9 | `model_Reco.py`, `rbc.py`, `rbc_model_reconstruction (1).py`, `rbc_model_reconstruction.py`, `rbc_model_reconstruction_128.py`, `wilmore_rbc.py`
+- `disc` | files=6 | mentions=8 | `rbc.py`, `rbc_model_reconstruction (1).py`, `rbc_model_reconstruction_128.py`, `rbc_willmore_analysis.py`, `rbc_willmore_analysis2.py`, `wilmore_rbc.py`
+- `generator` | files=6 | mentions=8 | `rbc_model_reconstruction_128.py`, `rbc_willmore_analysis.py`, `rbc_willmore_analysis2.py`, `willmore_crsital2.py`, `willmore_crystallography_suite.py.py`, `wilmore_rbc.py`
+- `creates` | files=6 | mentions=6 | `rbc.py`, `rbc_model_reconstruction (1).py`, `rbc_model_reconstruction_128.py`, `rbc_willmore_analysis.py`, `rbc_willmore_analysis2.py`, `wilmore_rbc.py`
+- `vertex` | files=5 | mentions=30 | `rbc_model_reconstruction.py`, `rbc_model_reconstruction_128.py`, `rbc_willmore_analysis.py`, `rbc_willmore_analysis2.py`, `wilmore_rbc.py`
+- `mean` | files=5 | mentions=23 | `rbc_model_reconstruction.py`, `rbc_willmore_analysis.py`, `rbc_willmore_analysis2.py`, `willmore_crsital2.py`, `willmore_crystallography_suite.py.py`
+
+## Verb Edges
+
+- `load` --depends_on--> `all` (strength 1.00)
+- `load` --depends_on--> `area` (strength 1.00)
+- `load` --depends_on--> `calculator` (strength 1.00)
+- `load` --depends_on--> `checkpoint` (strength 1.00)
+- `load` --depends_on--> `compute` (strength 1.00)
+- `load` --depends_on--> `config` (strength 1.00)
+- `load` --depends_on--> `create` (strength 1.00)
+- `load` --depends_on--> `curvature` (strength 1.00)
+- `load` --depends_on--> `energy` (strength 1.00)
+- `load` --depends_on--> `forward` (strength 1.00)
+- `load` --depends_on--> `gaussian` (strength 1.00)
+- `load` --depends_on--> `generator` (strength 1.00)
+- `load` --depends_on--> `geometry` (strength 1.00)
+- `load` --depends_on--> `layer` (strength 1.00)
+- `load` --depends_on--> `mean` (strength 1.00)
+- `load` --depends_on--> `metrics` (strength 1.00)
+- `load` --depends_on--> `minimal` (strength 1.00)
+- `load` --depends_on--> `network` (strength 1.00)
+- `load` --depends_on--> `operator` (strength 1.00)
+- `load` --depends_on--> `run` (strength 1.00)
+- `load` --depends_on--> `save` (strength 1.00)
+- `load` --depends_on--> `spectral` (strength 1.00)
+- `load` --depends_on--> `surface` (strength 1.00)
+- `load` --depends_on--> `willmore` (strength 1.00)
+- `model` --depends_on--> `all` (strength 1.00)
+- `model` --depends_on--> `area` (strength 1.00)
+- `model` --depends_on--> `calculator` (strength 1.00)
+- `model` --depends_on--> `checkpoint` (strength 1.00)
+- `model` --depends_on--> `compute` (strength 1.00)
+- `model` --depends_on--> `config` (strength 1.00)
+- `model` --depends_on--> `create` (strength 1.00)
+- `model` --depends_on--> `curvature` (strength 1.00)
+- `model` --depends_on--> `energy` (strength 1.00)
+- `model` --depends_on--> `forward` (strength 1.00)
+- `model` --depends_on--> `gaussian` (strength 1.00)
+- `model` --depends_on--> `generator` (strength 1.00)
+- `model` --depends_on--> `geometry` (strength 1.00)
+- `model` --depends_on--> `layer` (strength 1.00)
+- `model` --depends_on--> `load` (strength 1.00)
+- `model` --depends_on--> `mean` (strength 1.00)
+- `model` --depends_on--> `metrics` (strength 1.00)
+- `model` --depends_on--> `minimal` (strength 1.00)
+- `model` --depends_on--> `network` (strength 1.00)
+- `model` --depends_on--> `operator` (strength 1.00)
+- `model` --depends_on--> `run` (strength 1.00)
+- `model` --depends_on--> `save` (strength 1.00)
+- `model` --depends_on--> `spectral` (strength 1.00)
+- `model` --depends_on--> `surface` (strength 1.00)
+- `model` --depends_on--> `willmore` (strength 1.00)
+- `compute` --depends_on--> `all` (strength 0.88)
+
+## Dialectic
+
+- Thesis: `all` centralizes 7 files; Antithesis: `area` pulls 6 files with 4 shared (Jaccard 0.44); Synthesis: should they merge, split by layer, or keep `bridges` explicit?
+- Thesis: `all` centralizes 7 files; Antithesis: `biconcave` pulls 6 files with 4 shared (Jaccard 0.44); Synthesis: should they merge, split by layer, or keep `bridges` explicit?
+- Thesis: `all` centralizes 7 files; Antithesis: `blood` pulls 7 files with 5 shared (Jaccard 0.56); Synthesis: should they merge, split by layer, or keep `bridges` explicit?
+- Thesis: `all` centralizes 7 files; Antithesis: `calculator` pulls 6 files with 4 shared (Jaccard 0.44); Synthesis: should they merge, split by layer, or keep `bridges` explicit?
+- Thesis: `all` centralizes 7 files; Antithesis: `cell` pulls 7 files with 5 shared (Jaccard 0.56); Synthesis: should they merge, split by layer, or keep `bridges` explicit?
+- Thesis: `all` centralizes 7 files; Antithesis: `checkpoint` pulls 10 files with 7 shared (Jaccard 0.70); Synthesis: should they merge, split by layer, or keep `bridges` explicit?
+- Thesis: `all` centralizes 7 files; Antithesis: `comparison` pulls 7 files with 5 shared (Jaccard 0.56); Synthesis: should they merge, split by layer, or keep `bridges` explicit?
+- Thesis: `all` centralizes 7 files; Antithesis: `compute` pulls 12 files with 7 shared (Jaccard 0.58); Synthesis: should they merge, split by layer, or keep `depends_on` explicit?
+- Thesis: `all` centralizes 7 files; Antithesis: `config` pulls 7 files with 4 shared (Jaccard 0.40); Synthesis: should they merge, split by layer, or keep `bridges` explicit?
+- Thesis: `all` centralizes 7 files; Antithesis: `configuration` pulls 6 files with 3 shared (Jaccard 0.30); Synthesis: should they merge, split by layer, or keep `bridges` explicit?
