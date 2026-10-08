@@ -1,0 +1,439 @@
+# API
+
+## lol.py
+- `create_synthetic_rbc` (function) `lol.py:16` `def create_synthetic_rbc(n_vertices)` -- RBC sintético con forma bicóncava.
+- `spherical_projection` (function) `lol.py:44` `def spherical_projection(vertices, grid_size)` -- Proyección esférica - tiene problemas con dimples.
+- `cylindrical_projection` (function) `lol.py:76` `def cylindrical_projection(vertices, grid_size)` -- Proyección cilíndrica - NATURAL para RBC.
+- `spherical_to_cartesian` (function) `lol.py:123` `def spherical_to_cartesian(r_grid, grid_size)` -- Convierte grilla esférica a 3D.
+- `cylindrical_to_cartesian` (function) `lol.py:144` `def cylindrical_to_cartesian(rho_grid, z_min, z_max, grid_size)` -- Convierte grilla cilíndrica a 3D.
+- `compute_metrics` (function) `lol.py:164` `def compute_metrics(r_grid, mask, original_r)` -- Computa métricas de calidad.
+- `save_obj` (function) `lol.py:181` `def save_obj(vertices, faces, filepath)`
+- `main` (function) `lol.py:189` `def main()`
+
+## model_Reco.py
+Depends on: `willmore_crsital2.py`
+- `load_rbc_mesh` (function) `model_Reco.py:27` `def load_rbc_mesh(vert_path, face_path)`
+- `center_mesh` (function) `model_Reco.py:49` `def center_mesh(vertices)`
+- `cartesian_to_spherical` (function) `model_Reco.py:54` `def cartesian_to_spherical(vertices)`
+- `spherical_to_cartesian` (function) `model_Reco.py:63` `def spherical_to_cartesian(r, theta, phi)`
+- `evaluate_model_at_points` (function) `model_Reco.py:70` `def evaluate_model_at_points(model, r_values, theta_values, phi_values, grid_size, device, r_global_mean)` -- Evalúa el modelo en puntos arbitrarios (no en grilla regular).
+- `load_model` (function) `model_Reco.py:134` `def load_model(checkpoint_path, device, config)`
+- `compute_curvatures` (function) `model_Reco.py:159` `def compute_curvatures(vertices, faces, grid_size)` -- Compute curvatures using the same operator as training.
+- `save_obj` (function) `model_Reco.py:189` `def save_obj(vertices, faces, filepath)`
+- `save_html_viewer` (function) `model_Reco.py:197` `def save_html_viewer(orig_verts, orig_faces, pred_verts, pred_faces, output_path)`
+- `main` (function) `model_Reco.py:338` `def main()`
+
+## rbc.py
+Depends on: `willmore_crsital2.py`
+- `load_rbc_mesh` (function) `rbc.py:30` `def load_rbc_mesh(vert_path, face_path)` -- Load RBC mesh from OpenRBC files.
+- `load_model` (function) `rbc.py:53` `def load_model(checkpoint_path, device, config)` -- Load the trained Willmore model from checkpoint.
+- `project_rbc_to_spherical_grid` (function) `rbc.py:94` `def project_rbc_to_spherical_grid(vertices, grid_size)` -- Project entire RBC mesh onto a spherical coordinate grid.
+- `spherical_grid_to_cartesian` (function) `rbc.py:139` `def spherical_grid_to_cartesian(r_grid, grid_size, scale)` -- Convert spherical grid back to 3D vertices.
+- `run_model_evolution` (function) `rbc.py:164` `def run_model_evolution(model, input_grid, steps, device)` -- Run model iteratively to evolve the surface.
+- `create_sphere_grid` (function) `rbc.py:202` `def create_sphere_grid(grid_size, radius)` -- Create a perfect sphere grid for comparison.
+- `create_biconcave_grid` (function) `rbc.py:212` `def create_biconcave_grid(grid_size, radius)` -- Create a biconcave disc shape on spherical grid.
+- `compute_willmore_on_grid` (function) `rbc.py:224` `def compute_willmore_on_grid(surface, grid_size)` -- Compute Willmore energy using MinimalSurfaceOperator.
+- `save_obj` (function) `rbc.py:231` `def save_obj(vertices, faces, filepath)` -- Save mesh as OBJ file.
+- `save_html_comparison` (function) `rbc.py:240` `def save_html_comparison(original_vertices, original_faces, rbc_grid_vertices, rbc_grid_faces, evolved_vertices...` -- Create interactive HTML comparing all shapes.
+- `main` (function) `rbc.py:393` `def main()`
+
+## rbc_model_reconstruction (1).py
+Depends on: `willmore_crsital2.py`
+- `load_rbc_mesh` (function) `rbc_model_reconstruction (1).py:30` `def load_rbc_mesh(vert_path, face_path)` -- Load RBC mesh from OpenRBC files.
+- `load_model` (function) `rbc_model_reconstruction (1).py:53` `def load_model(checkpoint_path, device, config)` -- Load the trained Willmore model from checkpoint.
+- `project_rbc_to_spherical_grid` (function) `rbc_model_reconstruction (1).py:94` `def project_rbc_to_spherical_grid(vertices, grid_size)` -- Project entire RBC mesh onto a spherical coordinate grid.
+- `spherical_grid_to_cartesian` (function) `rbc_model_reconstruction (1).py:139` `def spherical_grid_to_cartesian(r_grid, grid_size, scale)` -- Convert spherical grid back to 3D vertices.
+- `run_model_evolution` (function) `rbc_model_reconstruction (1).py:164` `def run_model_evolution(model, input_grid, steps, device)` -- Run model iteratively to evolve the surface.
+- `create_sphere_grid` (function) `rbc_model_reconstruction (1).py:202` `def create_sphere_grid(grid_size, radius)` -- Create a perfect sphere grid for comparison.
+- `create_biconcave_grid` (function) `rbc_model_reconstruction (1).py:212` `def create_biconcave_grid(grid_size, radius)` -- Create a biconcave disc shape on spherical grid.
+- `compute_willmore_on_grid` (function) `rbc_model_reconstruction (1).py:224` `def compute_willmore_on_grid(surface, grid_size)` -- Compute Willmore energy using MinimalSurfaceOperator.
+- `save_obj` (function) `rbc_model_reconstruction (1).py:231` `def save_obj(vertices, faces, filepath)` -- Save mesh as OBJ file.
+- `save_html_comparison` (function) `rbc_model_reconstruction (1).py:240` `def save_html_comparison(original_vertices, original_faces, rbc_grid_vertices, rbc_grid_faces, evolved_vertices...` -- Create interactive HTML comparing all shapes.
+- `main` (function) `rbc_model_reconstruction (1).py:393` `def main()`
+
+## rbc_model_reconstruction.py
+Depends on: `willmore_crsital2.py`
+- `load_rbc_mesh` (function) `rbc_model_reconstruction.py:31` `def load_rbc_mesh(vert_path, face_path)` -- Load RBC mesh from OpenRBC files.
+- `compute_vertex_normals` (function) `rbc_model_reconstruction.py:54` `def compute_vertex_normals(vertices, faces)` -- Compute vertex normals.
+- `compute_face_areas` (function) `rbc_model_reconstruction.py:75` `def compute_face_areas(vertices, faces)` -- Compute face areas.
+- `load_model` (function) `rbc_model_reconstruction.py:84` `def load_model(checkpoint_path, device, config)` -- Load the trained Willmore model from checkpoint.
+- `create_local_patches_for_vertices` (function) `rbc_model_reconstruction.py:124` `def create_local_patches_for_vertices(vertices, faces, normals, grid_size)` -- Create local surface patches around each vertex for model input.
+- `run_model_on_patches` (function) `rbc_model_reconstruction.py:215` `def run_model_on_patches(model, patches_real, patches_imag, device, grid_size, batch_size)` -- Run the model on all vertex patches and extract predictions.
+- `compute_analytical_curvature` (function) `rbc_model_reconstruction.py:252` `def compute_analytical_curvature(vertices, faces)` -- Compute analytical mean curvature for comparison.
+- `save_ply_with_values` (function) `rbc_model_reconstruction.py:284` `def save_ply_with_values(vertices, faces, normals, values, filepath, value_name)` -- Save mesh as PLY with scalar values as vertex colors.
+- `save_html_viewer` (function) `rbc_model_reconstruction.py:319` `def save_html_viewer(vertices, faces, normals, model_curvature, analytical_curvature, output_path)` -- Create interactive HTML viewer with model predictions on actual RBC mesh.
+- `main` (function) `rbc_model_reconstruction.py:530` `def main()`
+
+## rbc_model_reconstruction_128.py
+Depends on: `willmore_crsital2.py`
+- `SpectralLayer.__init__` (method) `rbc_model_reconstruction_128.py:54` `def __init__(self, channels, grid_size)`
+- `SpectralLayer.forward` (method) `rbc_model_reconstruction_128.py:65` `def forward(self, x)`
+- `MinimalSurfaceSpectralNetwork.__init__` (method) `rbc_model_reconstruction_128.py:88` `def __init__(self, grid_size, hidden_dim, expansion_dim, num_spectral_layers, input_channels, output_channels)`
+- `MinimalSurfaceSpectralNetwork.forward` (method) `rbc_model_reconstruction_128.py:109` `def forward(self, x)`
+- `CheckpointLoader.load` (method) `rbc_model_reconstruction_128.py:124` `def load(checkpoint_path, device)`
+- `ModelBuilder.build` (method) `rbc_model_reconstruction_128.py:134` `def build(config)`
+- `ModelBuilder.load_from_checkpoint` (method) `rbc_model_reconstruction_128.py:145` `def load_from_checkpoint(checkpoint_path, config)`
+- `RBCMeshLoader.load` (method) `rbc_model_reconstruction_128.py:173` `def load(vert_path, face_path)`
+- `ImprovedSphericalProjector.__init__` (method) `rbc_model_reconstruction_128.py:206` `def __init__(self, grid_size, smoothing_sigma)`
+- `ImprovedSphericalProjector.compute_vertex_areas` (method) `rbc_model_reconstruction_128.py:214` `def compute_vertex_areas(self, vertices, faces)` -- Compute approximate area associated with each vertex.
+- `ImprovedSphericalProjector.project_mesh` (method) `rbc_model_reconstruction_128.py:229` `def project_mesh(self, vertices, faces, use_rbf)` -- Project mesh onto spherical grid with proper area weighting.
+- `ImprovedSphericalProjector.to_cartesian` (method) `rbc_model_reconstruction_128.py:352` `def to_cartesian(self, r_grid, scale)` -- Convert spherical grid back to 3D vertices.
+- `CylindricalProjector.__init__` (method) `rbc_model_reconstruction_128.py:385` `def __init__(self, grid_size, smoothing_sigma)`
+- `CylindricalProjector.project_mesh` (method) `rbc_model_reconstruction_128.py:393` `def project_mesh(self, vertices, faces)` -- Project mesh using cylindrical coordinates.
+- `CylindricalProjector.to_cartesian` (method) `rbc_model_reconstruction_128.py:442` `def to_cartesian(self, rho_grid, z_scale, rho_scale)` -- Convert cylindrical grid back to 3D vertices.
+- `SyntheticShapeGenerator.__init__` (method) `rbc_model_reconstruction_128.py:472` `def __init__(self, grid_size)`
+- `SyntheticShapeGenerator.create_sphere` (method) `rbc_model_reconstruction_128.py:478` `def create_sphere(self, radius)`
+- `SyntheticShapeGenerator.create_biconcave` (method) `rbc_model_reconstruction_128.py:481` `def create_biconcave(self, radius, dimple_depth)` -- Create biconcave disc shape using Evans-Fung model.
+- `SyntheticShapeGenerator.create_evans_fung_rbc` (method) `rbc_model_reconstruction_128.py:487` `def create_evans_fung_rbc(self, radius, dimple_depth, thickness)` -- Create RBC shape using Evans-Fung parametrization.
+- `WillmoreMetricsCalculator.__init__` (method) `rbc_model_reconstruction_128.py:517` `def __init__(self, grid_size)`
+- `WillmoreMetricsCalculator.compute_willmore` (method) `rbc_model_reconstruction_128.py:520` `def compute_willmore(self, surface)`
+- `WillmoreMetricsCalculator.compute_curvature_stats` (method) `rbc_model_reconstruction_128.py:524` `def compute_curvature_stats(self, surface)`
+- `SurfaceEvolver.__init__` (method) `rbc_model_reconstruction_128.py:545` `def __init__(self, model, config)`
+- `SurfaceEvolver.evolve` (method) `rbc_model_reconstruction_128.py:553` `def evolve(self, initial_surface)`
+- `MeshExporter.save_obj` (method) `rbc_model_reconstruction_128.py:593` `def save_obj(vertices, faces, filepath)`
+- `MeshExporter.save_html_comparison` (method) `rbc_model_reconstruction_128.py:602` `def save_html_comparison(original_vertices, original_faces, projected_vertices, projected_faces, evolved_vertices...`
+- `RBCReconstructionPipeline.__init__` (method) `rbc_model_reconstruction_128.py:760` `def __init__(self, config)`
+- `RBCReconstructionPipeline.run` (method) `rbc_model_reconstruction_128.py:771` `def run(self, checkpoint_path, vert_path, face_path, output_dir, projection_type)`
+- `RBCReconstructionPipeline.build_argument_parser` (method) `rbc_model_reconstruction_128.py:926` `def build_argument_parser()`
+- `RBCReconstructionPipeline.main` (method) `rbc_model_reconstruction_128.py:989` `def main()`
+
+## rbc_willmore_analysis.py
+- `ILogger.info` (method) `rbc_willmore_analysis.py:106` `def info(self, message)`
+- `ILogger.warning` (method) `rbc_willmore_analysis.py:110` `def warning(self, message)`
+- `ILogger.error` (method) `rbc_willmore_analysis.py:114` `def error(self, message)`
+- `ILogger.debug` (method) `rbc_willmore_analysis.py:118` `def debug(self, message)`
+- `StandardLogger.__init__` (method) `rbc_willmore_analysis.py:125` `def __init__(self, name, level)`
+- `StandardLogger.info` (method) `rbc_willmore_analysis.py:136` `def info(self, message)`
+- `StandardLogger.warning` (method) `rbc_willmore_analysis.py:139` `def warning(self, message)`
+- `StandardLogger.error` (method) `rbc_willmore_analysis.py:142` `def error(self, message)`
+- `StandardLogger.debug` (method) `rbc_willmore_analysis.py:145` `def debug(self, message)`
+- `IFileSystem.exists` (method) `rbc_willmore_analysis.py:153` `def exists(self, path)`
+- `IFileSystem.read_text` (method) `rbc_willmore_analysis.py:157` `def read_text(self, path)`
+- `IFileSystem.write_text` (method) `rbc_willmore_analysis.py:161` `def write_text(self, path, content)`
+- `IFileSystem.makedirs` (method) `rbc_willmore_analysis.py:165` `def makedirs(self, path)`
+- `StandardFileSystem.exists` (method) `rbc_willmore_analysis.py:172` `def exists(self, path)`
+- `StandardFileSystem.read_text` (method) `rbc_willmore_analysis.py:175` `def read_text(self, path)`
+- `StandardFileSystem.write_text` (method) `rbc_willmore_analysis.py:179` `def write_text(self, path, content)`
+- `StandardFileSystem.makedirs` (method) `rbc_willmore_analysis.py:183` `def makedirs(self, path)`
+- `MeshData.num_vertices` (method) `rbc_willmore_analysis.py:206` `def num_vertices(self)`
+- `MeshData.num_faces` (method) `rbc_willmore_analysis.py:210` `def num_faces(self)`
+- `MeshData.num_bonds` (method) `rbc_willmore_analysis.py:214` `def num_bonds(self)`
+- `MeshData.to_dict` (method) `rbc_willmore_analysis.py:217` `def to_dict(self)`
+- `IMeshLoader.load` (method) `rbc_willmore_analysis.py:232` `def load(self, vert_path, face_path, bond_path)`
+- `OpenRBCMeshLoader.__init__` (method) `rbc_willmore_analysis.py:245` `def __init__(self, filesystem, logger)`
+- `OpenRBCMeshLoader.load` (method) `rbc_willmore_analysis.py:249` `def load(self, vert_path, face_path, bond_path)`
+- `SyntheticMeshGenerator.__init__` (method) `rbc_willmore_analysis.py:382` `def __init__(self, logger)`
+- `SyntheticMeshGenerator.generate_sphere` (method) `rbc_willmore_analysis.py:385` `def generate_sphere(self, radius, resolution)`
+- `SyntheticMeshGenerator.generate_torus` (method) `rbc_willmore_analysis.py:424` `def generate_torus(self, R, r, resolution)`
+- `SyntheticMeshGenerator.generate_biconcave_disc` (method) `rbc_willmore_analysis.py:467` `def generate_biconcave_disc(self, radius, thickness, resolution)`
+- `ICurvatureCalculator.compute_mean_curvature` (method) `rbc_willmore_analysis.py:549` `def compute_mean_curvature(self, mesh)`
+- `ICurvatureCalculator.compute_gaussian_curvature` (method) `rbc_willmore_analysis.py:553` `def compute_gaussian_curvature(self, mesh)`
+- `ICurvatureCalculator.compute_willmore_energy` (method) `rbc_willmore_analysis.py:557` `def compute_willmore_energy(self, mesh, mean_curvature)`
+- `DiscreteCurvatureCalculator.__init__` (method) `rbc_willmore_analysis.py:578` `def __init__(self, logger)`
+- `DiscreteCurvatureCalculator.compute_mean_curvature` (method) `rbc_willmore_analysis.py:581` `def compute_mean_curvature(self, mesh)`
+- `DiscreteCurvatureCalculator.compute_gaussian_curvature` (method) `rbc_willmore_analysis.py:616` `def compute_gaussian_curvature(self, mesh)`
+- `DiscreteCurvatureCalculator.compute_willmore_energy` (method) `rbc_willmore_analysis.py:664` `def compute_willmore_energy(self, mesh, mean_curvature)`
+- `SpectralLayer.__init__` (method) `rbc_willmore_analysis.py:806` `def __init__(self, channels, grid_size)`
+- `SpectralLayer.forward` (method) `rbc_willmore_analysis.py:820` `def forward(self, x)`
+- `MinimalSurfaceSpectralNetwork.__init__` (method) `rbc_willmore_analysis.py:855` `def __init__(self, grid_size, hidden_dim, expansion_dim, num_spectral_layers, input_channels, output_channels)`
+- `MinimalSurfaceSpectralNetwork.forward` (method) `rbc_willmore_analysis.py:880` `def forward(self, x)`
+- `IModelLoader.load` (method) `rbc_willmore_analysis.py:898` `def load(self, checkpoint_path, device, config)`
+- `CheckpointModelLoader.__init__` (method) `rbc_willmore_analysis.py:905` `def __init__(self, filesystem, logger)`
+- `CheckpointModelLoader.load` (method) `rbc_willmore_analysis.py:947` `def load(self, checkpoint_path, device, config)`
+- `SurfaceAnalysisEngine.__init__` (method) `rbc_willmore_analysis.py:1009` `def __init__(self, config, logger, filesystem)`
+- `SurfaceAnalysisEngine.initialize` (method) `rbc_willmore_analysis.py:1028` `def initialize(self)`
+- `SurfaceAnalysisEngine.analyze_mesh` (method) `rbc_willmore_analysis.py:1076` `def analyze_mesh(self, mesh, name)`
+- `SurfaceAnalysisEngine.run_shape_emergence_test` (method) `rbc_willmore_analysis.py:1192` `def run_shape_emergence_test(self)`
+- `SurfaceAnalysisEngine.run_mean_curvature_flow` (method) `rbc_willmore_analysis.py:1318` `def run_mean_curvature_flow(self, mesh, steps, dt)`
+- `SurfaceAnalysisEngine.save_results` (method) `rbc_willmore_analysis.py:1357` `def save_results(self, results, filename)`
+- `SurfaceAnalysisEngine.save_mesh_obj` (method) `rbc_willmore_analysis.py:1362` `def save_mesh_obj(self, mesh, filename)`
+- `SurfaceAnalysisEngine.parse_arguments` (method) `rbc_willmore_analysis.py:1376` `def parse_arguments()`
+- `SurfaceAnalysisEngine.create_config_from_args` (method) `rbc_willmore_analysis.py:1470` `def create_config_from_args(args)`
+- `SurfaceAnalysisEngine.main` (method) `rbc_willmore_analysis.py:1488` `def main()`
+
+## rbc_willmore_analysis2.py
+- `ILogger.info` (method) `rbc_willmore_analysis2.py:106` `def info(self, message)`
+- `ILogger.warning` (method) `rbc_willmore_analysis2.py:110` `def warning(self, message)`
+- `ILogger.error` (method) `rbc_willmore_analysis2.py:114` `def error(self, message)`
+- `ILogger.debug` (method) `rbc_willmore_analysis2.py:118` `def debug(self, message)`
+- `StandardLogger.__init__` (method) `rbc_willmore_analysis2.py:125` `def __init__(self, name, level)`
+- `StandardLogger.info` (method) `rbc_willmore_analysis2.py:136` `def info(self, message)`
+- `StandardLogger.warning` (method) `rbc_willmore_analysis2.py:139` `def warning(self, message)`
+- `StandardLogger.error` (method) `rbc_willmore_analysis2.py:142` `def error(self, message)`
+- `StandardLogger.debug` (method) `rbc_willmore_analysis2.py:145` `def debug(self, message)`
+- `IFileSystem.exists` (method) `rbc_willmore_analysis2.py:153` `def exists(self, path)`
+- `IFileSystem.read_text` (method) `rbc_willmore_analysis2.py:157` `def read_text(self, path)`
+- `IFileSystem.write_text` (method) `rbc_willmore_analysis2.py:161` `def write_text(self, path, content)`
+- `IFileSystem.makedirs` (method) `rbc_willmore_analysis2.py:165` `def makedirs(self, path)`
+- `StandardFileSystem.exists` (method) `rbc_willmore_analysis2.py:172` `def exists(self, path)`
+- `StandardFileSystem.read_text` (method) `rbc_willmore_analysis2.py:175` `def read_text(self, path)`
+- `StandardFileSystem.write_text` (method) `rbc_willmore_analysis2.py:179` `def write_text(self, path, content)`
+- `StandardFileSystem.makedirs` (method) `rbc_willmore_analysis2.py:183` `def makedirs(self, path)`
+- `MeshData.num_vertices` (method) `rbc_willmore_analysis2.py:206` `def num_vertices(self)`
+- `MeshData.num_faces` (method) `rbc_willmore_analysis2.py:210` `def num_faces(self)`
+- `MeshData.num_bonds` (method) `rbc_willmore_analysis2.py:214` `def num_bonds(self)`
+- `MeshData.to_dict` (method) `rbc_willmore_analysis2.py:217` `def to_dict(self)`
+- `IMeshLoader.load` (method) `rbc_willmore_analysis2.py:232` `def load(self, vert_path, face_path, bond_path)`
+- `OpenRBCMeshLoader.__init__` (method) `rbc_willmore_analysis2.py:245` `def __init__(self, filesystem, logger)`
+- `OpenRBCMeshLoader.load` (method) `rbc_willmore_analysis2.py:249` `def load(self, vert_path, face_path, bond_path)`
+- `SyntheticMeshGenerator.__init__` (method) `rbc_willmore_analysis2.py:382` `def __init__(self, logger)`
+- `SyntheticMeshGenerator.generate_sphere` (method) `rbc_willmore_analysis2.py:385` `def generate_sphere(self, radius, resolution)`
+- `SyntheticMeshGenerator.generate_torus` (method) `rbc_willmore_analysis2.py:424` `def generate_torus(self, R, r, resolution)`
+- `SyntheticMeshGenerator.generate_biconcave_disc` (method) `rbc_willmore_analysis2.py:467` `def generate_biconcave_disc(self, radius, thickness, resolution)`
+- `ICurvatureCalculator.compute_mean_curvature` (method) `rbc_willmore_analysis2.py:549` `def compute_mean_curvature(self, mesh)`
+- `ICurvatureCalculator.compute_gaussian_curvature` (method) `rbc_willmore_analysis2.py:553` `def compute_gaussian_curvature(self, mesh)`
+- `ICurvatureCalculator.compute_willmore_energy` (method) `rbc_willmore_analysis2.py:557` `def compute_willmore_energy(self, mesh, mean_curvature)`
+- `DiscreteCurvatureCalculator.__init__` (method) `rbc_willmore_analysis2.py:578` `def __init__(self, logger)`
+- `DiscreteCurvatureCalculator.compute_mean_curvature` (method) `rbc_willmore_analysis2.py:581` `def compute_mean_curvature(self, mesh)`
+- `DiscreteCurvatureCalculator.compute_gaussian_curvature` (method) `rbc_willmore_analysis2.py:616` `def compute_gaussian_curvature(self, mesh)`
+- `DiscreteCurvatureCalculator.compute_willmore_energy` (method) `rbc_willmore_analysis2.py:664` `def compute_willmore_energy(self, mesh, mean_curvature)`
+- `SpectralLayer.__init__` (method) `rbc_willmore_analysis2.py:806` `def __init__(self, channels, grid_size)`
+- `SpectralLayer.forward` (method) `rbc_willmore_analysis2.py:820` `def forward(self, x)`
+- `MinimalSurfaceSpectralNetwork.__init__` (method) `rbc_willmore_analysis2.py:855` `def __init__(self, grid_size, hidden_dim, expansion_dim, num_spectral_layers, input_channels, output_channels)`
+- `MinimalSurfaceSpectralNetwork.forward` (method) `rbc_willmore_analysis2.py:880` `def forward(self, x)`
+- `IModelLoader.load` (method) `rbc_willmore_analysis2.py:898` `def load(self, checkpoint_path, device, config)`
+- `CheckpointModelLoader.__init__` (method) `rbc_willmore_analysis2.py:905` `def __init__(self, filesystem, logger)`
+- `CheckpointModelLoader.load` (method) `rbc_willmore_analysis2.py:947` `def load(self, checkpoint_path, device, config)`
+- `SurfaceAnalysisEngine.__init__` (method) `rbc_willmore_analysis2.py:1009` `def __init__(self, config, logger, filesystem)`
+- `SurfaceAnalysisEngine.initialize` (method) `rbc_willmore_analysis2.py:1028` `def initialize(self)`
+- `SurfaceAnalysisEngine.analyze_mesh` (method) `rbc_willmore_analysis2.py:1076` `def analyze_mesh(self, mesh, name)`
+- `SurfaceAnalysisEngine.run_shape_emergence_test` (method) `rbc_willmore_analysis2.py:1192` `def run_shape_emergence_test(self)`
+- `SurfaceAnalysisEngine.run_mean_curvature_flow` (method) `rbc_willmore_analysis2.py:1318` `def run_mean_curvature_flow(self, mesh, steps, dt)`
+- `SurfaceAnalysisEngine.save_results` (method) `rbc_willmore_analysis2.py:1357` `def save_results(self, results, filename)`
+- `SurfaceAnalysisEngine.convert_to_native` (method) `rbc_willmore_analysis2.py:1360` `def convert_to_native(obj)`
+- `SurfaceAnalysisEngine.save_mesh_obj` (method) `rbc_willmore_analysis2.py:1380` `def save_mesh_obj(self, mesh, filename)`
+- `SurfaceAnalysisEngine.parse_arguments` (method) `rbc_willmore_analysis2.py:1394` `def parse_arguments()`
+- `SurfaceAnalysisEngine.create_config_from_args` (method) `rbc_willmore_analysis2.py:1488` `def create_config_from_args(args)`
+- `SurfaceAnalysisEngine.main` (method) `rbc_willmore_analysis2.py:1506` `def main()`
+
+## willmore_crsital2.py
+Imported by: `model_Reco.py`, `rbc.py`, `rbc_model_reconstruction (1).py`, `rbc_model_reconstruction.py`, `rbc_model_reconstruction_128.py`, `test.py`, `willmore_zero_shot_scaler.py`, `wilmore_rbc.py`
+- `IPhaseDetector.detect` (method) `willmore_crsital2.py:203` `def detect(self, spectral_field)`
+- `IMetricCalculator.compute` (method) `willmore_crsital2.py:209` `def compute(self, model)`
+- `SeedManager.set_seed` (method) `willmore_crsital2.py:215` `def set_seed(seed, device)`
+- `LoggerFactory.create_logger` (method) `willmore_crsital2.py:229` `def create_logger(name, level)`
+- `MinimalSurfaceOperator.__init__` (method) `willmore_crsital2.py:243` `def __init__(self, grid_size)`
+- `MinimalSurfaceOperator.apply_laplacian` (method) `willmore_crsital2.py:257` `def apply_laplacian(self, field)`
+- `MinimalSurfaceOperator.compute_mean_curvature` (method) `willmore_crsital2.py:262` `def compute_mean_curvature(self, surface)`
+- `MinimalSurfaceOperator.compute_gaussian_curvature` (method) `willmore_crsital2.py:273` `def compute_gaussian_curvature(self, surface)`
+- `MinimalSurfaceOperator.compute_willmore_energy` (method) `willmore_crsital2.py:284` `def compute_willmore_energy(self, surface)`
+- `MinimalSurfaceOperator.compute_surface_area` (method) `willmore_crsital2.py:290` `def compute_surface_area(self, surface)`
+- `MinimalSurfaceOperator.mean_curvature_flow` (method) `willmore_crsital2.py:297` `def mean_curvature_flow(self, surface, dt)`
+- `SpectralLayer.__init__` (method) `willmore_crsital2.py:308` `def __init__(self, channels, grid_size)`
+- `SpectralLayer.forward` (method) `willmore_crsital2.py:315` `def forward(self, x)`
+- `MinimalSurfaceBackbone.__init__` (method) `willmore_crsital2.py:332` `def __init__(self, grid_size, hidden_dim, num_spectral_layers)`
+- `MinimalSurfaceBackbone.forward` (method) `willmore_crsital2.py:342` `def forward(self, x)`
+- `MinimalSurfaceInferenceEngine.__init__` (method) `willmore_crsital2.py:352` `def __init__(self, config)`
+- `MinimalSurfaceInferenceEngine.apply_mean_curvature` (method) `willmore_crsital2.py:382` `def apply_mean_curvature(self, surface)`
+- `MinimalSurfaceInferenceEngine.mean_curvature_evolve` (method) `willmore_crsital2.py:388` `def mean_curvature_evolve(self, surface, dt)`
+- `SurfacePotentialGenerator.__init__` (method) `willmore_crsital2.py:400` `def __init__(self, config)`
+- `SurfacePotentialGenerator.pyramid_potential` (method) `willmore_crsital2.py:404` `def pyramid_potential(self)`
+- `SurfacePotentialGenerator.cube_potential` (method) `willmore_crsital2.py:411` `def cube_potential(self)`
+- `SurfacePotentialGenerator.dodecahedron_potential` (method) `willmore_crsital2.py:418` `def dodecahedron_potential(self)`
+- `SurfacePotentialGenerator.torus_potential` (method) `willmore_crsital2.py:426` `def torus_potential(self)`
+- `SurfacePotentialGenerator.hyperbolic_potential` (method) `willmore_crsital2.py:434` `def hyperbolic_potential(self)`
+- `SurfacePotentialGenerator.generate_mixed_potential` (method) `willmore_crsital2.py:442` `def generate_mixed_potential(self, seed)`
+- `MinimalSurfaceDataset.__init__` (method) `willmore_crsital2.py:453` `def __init__(self, config, surface_engine, seed)`
+- `MinimalSurfaceDataset.get_validation_batch` (method) `willmore_crsital2.py:536` `def get_validation_batch(self)`
+- `MinimalSurfaceSpectralNetwork.__init__` (method) `willmore_crsital2.py:540` `def __init__(self, grid_size, hidden_dim, expansion_dim, num_spectral_layers, input_channels, output_channels)`
+- `MinimalSurfaceSpectralNetwork.forward` (method) `willmore_crsital2.py:557` `def forward(self, x)`
+- `WillmoreEnergyCalculator.__init__` (method) `willmore_crsital2.py:568` `def __init__(self, config)`
+- `WillmoreEnergyCalculator.compute` (method) `willmore_crsital2.py:573` `def compute(self, model)`
+- `WillmoreEnergyCalculator.compute_surface_metrics` (method) `willmore_crsital2.py:590` `def compute_surface_metrics(self, surface)`
+- `RicciFlowCalculator.__init__` (method) `willmore_crsital2.py:623` `def __init__(self, config)`
+- `RicciFlowCalculator.compute` (method) `willmore_crsital2.py:627` `def compute(self, model)`
+- `FullFourierAnalyzer.__init__` (method) `willmore_crsital2.py:669` `def __init__(self, config)`
+- `FullFourierAnalyzer.compute_full_spectrum` (method) `willmore_crsital2.py:677` `def compute_full_spectrum(self, spectral_field)`
+- `FullFourierAnalyzer.compute_resonance_metrics` (method) `willmore_crsital2.py:701` `def compute_resonance_metrics(self, spectral_field)`
+- `FourierMassCenterAnalyzer.__init__` (method) `willmore_crsital2.py:712` `def __init__(self, config)`
+- `FourierMassCenterAnalyzer.compute_mass_center` (method) `willmore_crsital2.py:728` `def compute_mass_center(self, spectral_field)`
+- `TopologicalPhaseDetector.__init__` (method) `willmore_crsital2.py:752` `def __init__(self, config)`
+- `TopologicalPhaseDetector.detect` (method) `willmore_crsital2.py:759` `def detect(self, spectral_field)`
+- `SpectralFieldExtractor.extract` (method) `willmore_crsital2.py:782` `def extract(model, grid_size)`
+- `TopologicalMetricsCalculator.__init__` (method) `willmore_crsital2.py:799` `def __init__(self, config)`
+- `TopologicalMetricsCalculator.compute` (method) `willmore_crsital2.py:804` `def compute(self, model)`
+- `LocalComplexityAnalyzer.compute_local_complexity` (method) `willmore_crsital2.py:820` `def compute_local_complexity(weights, epsilon)`
+- `SuperpositionAnalyzer.compute_superposition` (method) `willmore_crsital2.py:835` `def compute_superposition(weights)`
+- `CrystallographyMetricsCalculator.__init__` (method) `willmore_crsital2.py:852` `def __init__(self, config)`
+- `CrystallographyMetricsCalculator.compute` (method) `willmore_crsital2.py:856` `def compute(self, model)`
+- `CrystallographyMetricsCalculator.compute_kappa` (method) `willmore_crsital2.py:861` `def compute_kappa(self, model, val_x, val_y, num_batches)`
+- `CrystallographyMetricsCalculator.compute_discretization_margin` (method) `willmore_crsital2.py:903` `def compute_discretization_margin(self, model)`
+- `CrystallographyMetricsCalculator.compute_alpha_purity` (method) `willmore_crsital2.py:911` `def compute_alpha_purity(self, model)`
+- `CrystallographyMetricsCalculator.compute_kappa_quantum` (method) `willmore_crsital2.py:916` `def compute_kappa_quantum(self, model)`
+- `CrystallographyMetricsCalculator.compute_poynting_vector` (method) `willmore_crsital2.py:935` `def compute_poynting_vector(self, model)`
+- `CrystallographyMetricsCalculator.compute_hbar_effective` (method) `willmore_crsital2.py:946` `def compute_hbar_effective(self, model, lambda_pressure)`
+- `CrystallographyMetricsCalculator.compute_all_metrics` (method) `willmore_crsital2.py:953` `def compute_all_metrics(self, model, val_x, val_y)`
+- `ThermodynamicMetricsCalculator.__init__` (method) `willmore_crsital2.py:966` `def __init__(self, config)`
+- `ThermodynamicMetricsCalculator.compute` (method) `willmore_crsital2.py:969` `def compute(self, model)`
+- `ThermodynamicMetricsCalculator.compute_effective_temperature` (method) `willmore_crsital2.py:983` `def compute_effective_temperature(self, gradient_buffer, learning_rate)`
+- `ThermodynamicMetricsCalculator.compute_specific_heat` (method) `willmore_crsital2.py:1001` `def compute_specific_heat(self, loss_history, temp_history)`
+- `ThermodynamicMetricsCalculator.compute_gibbs_free_energy` (method) `willmore_crsital2.py:1010` `def compute_gibbs_free_energy(self, delta, alpha, temperature)`
+- `ThermodynamicMetricsCalculator.compute_critical_temperature` (method) `willmore_crsital2.py:1017` `def compute_critical_temperature(self, alpha)`
+- `SpectralGeometryCalculator.__init__` (method) `willmore_crsital2.py:1022` `def __init__(self, config)`
+- `SpectralGeometryCalculator.compute` (method) `willmore_crsital2.py:1025` `def compute(self, model)`
+- `RicciCurvatureCalculator.__init__` (method) `willmore_crsital2.py:1045` `def __init__(self, config)`
+- `RicciCurvatureCalculator.compute` (method) `willmore_crsital2.py:1048` `def compute(self, model)`
+- `SpectroscopyMetricsCalculator.__init__` (method) `willmore_crsital2.py:1066` `def __init__(self, config)`
+- `SpectroscopyMetricsCalculator.compute` (method) `willmore_crsital2.py:1069` `def compute(self, model)`
+- `LambdaPressureScheduler.__init__` (method) `willmore_crsital2.py:1083` `def __init__(self, config)`
+- `LambdaPressureScheduler.current_lambda` (method) `willmore_crsital2.py:1092` `def current_lambda(self)`
+- `LambdaPressureScheduler.step` (method) `willmore_crsital2.py:1095` `def step(self, epoch)`
+- `LambdaPressureScheduler.compute_regularization_loss` (method) `willmore_crsital2.py:1102` `def compute_regularization_loss(self, model)`
+- `LambdaPressureScheduler.set_lambda` (method) `willmore_crsital2.py:1110` `def set_lambda(self, value)`
+- `AdaptiveLambdaScheduler.__init__` (method) `willmore_crsital2.py:1115` `def __init__(self, config)`
+- `AdaptiveLambdaScheduler.step_adaptive` (method) `willmore_crsital2.py:1120` `def step_adaptive(self, epoch, topo_phase_state)`
+- `QuadruplePrecisionLambdaScheduler.__init__` (method) `willmore_crsital2.py:1130` `def __init__(self, config)`
+- `QuadruplePrecisionLambdaScheduler.current_lambda` (method) `willmore_crsital2.py:1139` `def current_lambda(self)`
+- `QuadruplePrecisionLambdaScheduler.step` (method) `willmore_crsital2.py:1142` `def step(self, epoch, improvement)`
+- `QuadruplePrecisionLambdaScheduler.compute_regularization_loss` (method) `willmore_crsital2.py:1149` `def compute_regularization_loss(self, model)`
+- `QuadruplePrecisionLambdaScheduler.set_lambda` (method) `willmore_crsital2.py:1157` `def set_lambda(self, value)`
+- `AnnealingScheduler.__init__` (method) `willmore_crsital2.py:1162` `def __init__(self, config)`
+- `AnnealingScheduler.temperature` (method) `willmore_crsital2.py:1170` `def temperature(self)`
+- `AnnealingScheduler.step` (method) `willmore_crsital2.py:1173` `def step(self)`
+- `AnnealingScheduler.accept_perturbation` (method) `willmore_crsital2.py:1176` `def accept_perturbation(self, delta_loss)`
+- `AnnealingScheduler.should_restart` (method) `willmore_crsital2.py:1182` `def should_restart(self, current_delta, best_delta)`
+- `TopologicalAnnealingScheduler.__init__` (method) `willmore_crsital2.py:1187` `def __init__(self, config)`
+- `TopologicalAnnealingScheduler.step_adaptive` (method) `willmore_crsital2.py:1191` `def step_adaptive(self, alignment_trend, resonance_score)`
+- `TrainingMetricsMonitor.__init__` (method) `willmore_crsital2.py:1203` `def __init__(self, config)`
+- `TrainingMetricsMonitor.update_metrics` (method) `willmore_crsital2.py:1210` `def update_metrics(self)`
+- `TrainingMetricsMonitor.compute_delta_slope` (method) `willmore_crsital2.py:1219` `def compute_delta_slope(self)`
+- `TrainingMetricsMonitor.format_progress_bar` (method) `willmore_crsital2.py:1229` `def format_progress_bar(self, epoch, total_epochs, phase)`
+- `TrainingMetricsMonitor.safe_get` (method) `willmore_crsital2.py:1231` `def safe_get(key)`
+- `CheckpointManager.__init__` (method) `willmore_crsital2.py:1262` `def __init__(self, config, checkpoint_dir)`
+- `CheckpointManager.should_save_checkpoint` (method) `willmore_crsital2.py:1271` `def should_save_checkpoint(self)`
+- `CheckpointManager.save_checkpoint` (method) `willmore_crsital2.py:1276` `def save_checkpoint(self, model, optimizer, epoch, metrics, phase, lambda_value, config_snapshot)`
+- `Phase5CheckpointManager.__init__` (method) `willmore_crsital2.py:1292` `def __init__(self, config)`
+- `Phase5CheckpointManager.should_save` (method) `willmore_crsital2.py:1302` `def should_save(self, current_delta, current_alpha, current_acc)`
+- `Phase5CheckpointManager.save_checkpoint` (method) `willmore_crsital2.py:1307` `def save_checkpoint(self, model, optimizer, epoch, metrics, lambda_value)`
+- `WeightIntegrityChecker.check` (method) `willmore_crsital2.py:1324` `def check(model)`
+- `TrainingEngine.__init__` (method) `willmore_crsital2.py:1339` `def __init__(self, config)`
+- `TrainingEngine.compute_weight_metrics` (method) `willmore_crsital2.py:1354` `def compute_weight_metrics(self, model)`
+- `TrainingEngine.compute_norm_conservation_error` (method) `willmore_crsital2.py:1364` `def compute_norm_conservation_error(self, model, val_x)`
+- `TrainingEngine.train_single_epoch` (method) `willmore_crsital2.py:1373` `def train_single_epoch(self, model, optimizer, dataloader, epoch, lambda_scheduler)`
+- `TrainingEngine.validate` (method) `willmore_crsital2.py:1398` `def validate(self, model, val_x, val_y)`
+- `TrainingEngine.collect_all_metrics` (method) `willmore_crsital2.py:1408` `def collect_all_metrics(self, model, monitor, val_x, val_y, lambda_scheduler, annealing_scheduler, current_lr, epoch)`
+- `BatchSizeProspector.__init__` (method) `willmore_crsital2.py:1448` `def __init__(self, config, surface_engine)`
+- `BatchSizeProspector.prospect` (method) `willmore_crsital2.py:1453` `def prospect(self)`
+- `SeedMiner.__init__` (method) `willmore_crsital2.py:1484` `def __init__(self, config, surface_engine, batch_size)`
+- `SeedMiner.mine` (method) `willmore_crsital2.py:1490` `def mine(self)`
+- `FullTrainingOrchestrator.__init__` (method) `willmore_crsital2.py:1534` `def __init__(self, config, surface_engine, seed, batch_size)`
+- `FullTrainingOrchestrator.run_phase3_training` (method) `willmore_crsital2.py:1541` `def run_phase3_training(self)`
+- `RefinementOrchestrator.__init__` (method) `willmore_crsital2.py:1600` `def __init__(self, config, surface_engine, model, optimizer, monitor, seed, batch_size)`
+- `RefinementOrchestrator.run_phase4_refinement` (method) `willmore_crsital2.py:1610` `def run_phase4_refinement(self)`
+- `Phase5Orchestrator.__init__` (method) `willmore_crsital2.py:1664` `def __init__(self, config, surface_engine, model, monitor, seed, batch_size)`
+- `Phase5Orchestrator.run_phase5_crystallization` (method) `willmore_crsital2.py:1674` `def run_phase5_crystallization(self)`
+- `ExperimentOrchestrator.__init__` (method) `willmore_crsital2.py:1726` `def __init__(self, config)`
+- `ExperimentOrchestrator.run` (method) `willmore_crsital2.py:1730` `def run(self)`
+- `ExperimentOrchestrator.build_argument_parser` (method) `willmore_crsital2.py:1839` `def build_argument_parser()`
+- `ExperimentOrchestrator.main` (method) `willmore_crsital2.py:1868` `def main()`
+
+## willmore_crystallography_suite.py.py
+- `SpectralLayer.__init__` (method) `willmore_crystallography_suite.py.py:95` `def __init__(self, channels, grid_size)`
+- `SpectralLayer.forward` (method) `willmore_crystallography_suite.py.py:112` `def forward(self, x)`
+- `MinimalSurfaceSpectralNetwork.__init__` (method) `willmore_crystallography_suite.py.py:141` `def __init__(self, config)`
+- `MinimalSurfaceSpectralNetwork.forward` (method) `willmore_crystallography_suite.py.py:160` `def forward(self, x)`
+- `MinimalSurfaceSpectralNetwork.get_spectral_representation` (method) `willmore_crystallography_suite.py.py:171` `def get_spectral_representation(self, x)` -- Extract spectral features for analysis.
+- `MinimalSurfaceOperator.__init__` (method) `willmore_crystallography_suite.py.py:184` `def __init__(self, grid_size)`
+- `MinimalSurfaceOperator.apply_laplacian` (method) `willmore_crystallography_suite.py.py:196` `def apply_laplacian(self, field)`
+- `MinimalSurfaceOperator.compute_mean_curvature` (method) `willmore_crystallography_suite.py.py:201` `def compute_mean_curvature(self, surface)`
+- `MinimalSurfaceOperator.compute_gaussian_curvature` (method) `willmore_crystallography_suite.py.py:212` `def compute_gaussian_curvature(self, surface)`
+- `MinimalSurfaceOperator.compute_willmore_energy` (method) `willmore_crystallography_suite.py.py:223` `def compute_willmore_energy(self, surface)`
+- `MinimalSurfaceOperator.compute_surface_area` (method) `willmore_crystallography_suite.py.py:229` `def compute_surface_area(self, surface)`
+- `SurfacePotentialGenerator.__init__` (method) `willmore_crystallography_suite.py.py:240` `def __init__(self, config)`
+- `SurfacePotentialGenerator.pyramid_potential` (method) `willmore_crystallography_suite.py.py:244` `def pyramid_potential(self)`
+- `SurfacePotentialGenerator.cube_potential` (method) `willmore_crystallography_suite.py.py:251` `def cube_potential(self)`
+- `SurfacePotentialGenerator.dodecahedron_potential` (method) `willmore_crystallography_suite.py.py:258` `def dodecahedron_potential(self)`
+- `SurfacePotentialGenerator.torus_potential` (method) `willmore_crystallography_suite.py.py:266` `def torus_potential(self)`
+- `SurfacePotentialGenerator.hyperbolic_potential` (method) `willmore_crystallography_suite.py.py:274` `def hyperbolic_potential(self)`
+- `SurfacePotentialGenerator.generate_mixed_potential` (method) `willmore_crystallography_suite.py.py:282` `def generate_mixed_potential(self, seed)`
+- `MinimalSurfaceDataset.__init__` (method) `willmore_crystallography_suite.py.py:301` `def __init__(self, config, seed, num_samples)`
+- `MinimalSurfaceDataset.get_validation_batch` (method) `willmore_crystallography_suite.py.py:370` `def get_validation_batch(self)`
+- `WeightIntegrityCalculator.__init__` (method) `willmore_crystallography_suite.py.py:377` `def __init__(self, config)`
+- `WeightIntegrityCalculator.compute` (method) `willmore_crystallography_suite.py.py:380` `def compute(self, model)`
+- `DiscretizationCalculator.__init__` (method) `willmore_crystallography_suite.py.py:413` `def __init__(self, config)`
+- `DiscretizationCalculator.compute` (method) `willmore_crystallography_suite.py.py:416` `def compute(self, model)`
+- `SpectralGeometryCalculator.__init__` (method) `willmore_crystallography_suite.py.py:443` `def __init__(self, config)`
+- `SpectralGeometryCalculator.compute` (method) `willmore_crystallography_suite.py.py:446` `def compute(self, model)`
+- `RicciCurvatureCalculator.__init__` (method) `willmore_crystallography_suite.py.py:503` `def __init__(self, config)`
+- `RicciCurvatureCalculator.compute` (method) `willmore_crystallography_suite.py.py:506` `def compute(self, model)`
+- `WillmoreEnergyCalculator.__init__` (method) `willmore_crystallography_suite.py.py:550` `def __init__(self, config)`
+- `WillmoreEnergyCalculator.compute` (method) `willmore_crystallography_suite.py.py:554` `def compute(self, model)`
+- `TopologicalPhaseDetector.__init__` (method) `willmore_crystallography_suite.py.py:622` `def __init__(self, config)`
+- `TopologicalPhaseDetector.detect` (method) `willmore_crystallography_suite.py.py:628` `def detect(self, spectral_field)`
+- `BerryPhaseCalculator.__init__` (method) `willmore_crystallography_suite.py.py:712` `def __init__(self, config)`
+- `BerryPhaseCalculator.load_checkpoints` (method) `willmore_crystallography_suite.py.py:715` `def load_checkpoints(self, checkpoint_dir)`
+- `BerryPhaseCalculator.flatten_spectral_kernels` (method) `willmore_crystallography_suite.py.py:738` `def flatten_spectral_kernels(self, state_dict)`
+- `BerryPhaseCalculator.calculate_berry_phase` (method) `willmore_crystallography_suite.py.py:751` `def calculate_berry_phase(self, checkpoint_dir)`
+- `FunctionalTest.__init__` (method) `willmore_crystallography_suite.py.py:790` `def __init__(self, config)`
+- `FunctionalTest.run` (method) `willmore_crystallography_suite.py.py:795` `def run(self, model, dataset)`
+- `AccuracyTest.run` (method) `willmore_crystallography_suite.py.py:802` `def run(self, model, dataset)`
+- `SurfaceReconstructionTest.__init__` (method) `willmore_crystallography_suite.py.py:826` `def __init__(self, config)`
+- `SurfaceReconstructionTest.run` (method) `willmore_crystallography_suite.py.py:830` `def run(self, model, dataset)`
+- `GeneralizationTest.run` (method) `willmore_crystallography_suite.py.py:869` `def run(self, model, dataset)`
+- `CheckpointAnalyzer.__init__` (method) `willmore_crystallography_suite.py.py:903` `def __init__(self, config)`
+- `CheckpointAnalyzer.analyze_checkpoint` (method) `willmore_crystallography_suite.py.py:918` `def analyze_checkpoint(self, checkpoint_path, dataset)`
+- `ComprehensiveVisualizer.__init__` (method) `willmore_crystallography_suite.py.py:1038` `def __init__(self, config)`
+- `ComprehensiveVisualizer.visualize_analysis` (method) `willmore_crystallography_suite.py.py:1041` `def visualize_analysis(self, results, output_path)`
+- `BatchProcessor.__init__` (method) `willmore_crystallography_suite.py.py:1324` `def __init__(self, config)`
+- `BatchProcessor.process_directory` (method) `willmore_crystallography_suite.py.py:1331` `def process_directory(self, checkpoint_dir, output_dir, dataset)`
+- `BatchProcessor.setup_logging` (method) `willmore_crystallography_suite.py.py:1444` `def setup_logging(log_level)` -- Configure logging for the suite.
+- `BatchProcessor.main` (method) `willmore_crystallography_suite.py.py:1452` `def main()`
+
+## willmore_zero_shot_scaler.py
+Depends on: `willmore_crsital2.py`
+- `IConfigurationLoader.load` (method) `willmore_zero_shot_scaler.py:148` `def load(self, source)` -- Load configuration from the specified source.
+- `TOMLConfigurationLoader.load` (method) `willmore_zero_shot_scaler.py:156` `def load(self, source)`
+- `ICheckpointManager.load_checkpoint` (method) `willmore_zero_shot_scaler.py:211` `def load_checkpoint(self, path, device)` -- Load a model checkpoint from disk.
+- `ICheckpointManager.save_checkpoint` (method) `willmore_zero_shot_scaler.py:216` `def save_checkpoint(self, model, metrics, path)` -- Save a model checkpoint to disk.
+- `WillmoreCheckpointManager.__init__` (method) `willmore_zero_shot_scaler.py:224` `def __init__(self, config)`
+- `WillmoreCheckpointManager.load_checkpoint` (method) `willmore_zero_shot_scaler.py:228` `def load_checkpoint(self, path, device)`
+- `WillmoreCheckpointManager.save_checkpoint` (method) `willmore_zero_shot_scaler.py:246` `def save_checkpoint(self, model, metrics, path)`
+- `ISpectralWeightInterpolator.interpolate` (method) `willmore_zero_shot_scaler.py:264` `def interpolate(self, source_weight, target_shape)` -- Interpolate spectral weights to a new shape.
+- `FourierSpectralInterpolator.__init__` (method) `willmore_zero_shot_scaler.py:277` `def __init__(self, config)`
+- `FourierSpectralInterpolator.interpolate` (method) `willmore_zero_shot_scaler.py:281` `def interpolate(self, source_weight, target_shape)`
+- `BilinearSpectralInterpolator.__init__` (method) `willmore_zero_shot_scaler.py:390` `def __init__(self, config)`
+- `BilinearSpectralInterpolator.interpolate` (method) `willmore_zero_shot_scaler.py:394` `def interpolate(self, source_weight, target_shape)`
+- `IGridScaler.scale_model` (method) `willmore_zero_shot_scaler.py:449` `def scale_model(self, source_model, target_grid_size)` -- Scale a model to a new grid resolution.
+- `WillmoreGridScaler.__init__` (method) `willmore_zero_shot_scaler.py:461` `def __init__(self, config, interpolator)`
+- `WillmoreGridScaler.scale_model` (method) `willmore_zero_shot_scaler.py:470` `def scale_model(self, source_model, target_grid_size)`
+- `IMetricsEvaluator.evaluate` (method) `willmore_zero_shot_scaler.py:587` `def evaluate(self, model, grid_size, num_samples)` -- Evaluate model performance and metrics.
+- `WillmoreMetricsEvaluator.__init__` (method) `willmore_zero_shot_scaler.py:600` `def __init__(self, config)`
+- `WillmoreMetricsEvaluator.evaluate` (method) `willmore_zero_shot_scaler.py:606` `def evaluate(self, model, grid_size, num_samples)`
+- `ScalingPipeline.__init__` (method) `willmore_zero_shot_scaler.py:779` `def __init__(self, config)`
+- `ScalingPipeline.execute` (method) `willmore_zero_shot_scaler.py:796` `def execute(self)`
+- `ScalingPipeline.create_default_config_file` (method) `willmore_zero_shot_scaler.py:1046` `def create_default_config_file(path)` -- Create a default configuration file.
+- `ScalingPipeline.build_argument_parser` (method) `willmore_zero_shot_scaler.py:1053` `def build_argument_parser()` -- Build the command-line argument parser.
+- `ScalingPipeline.main` (method) `willmore_zero_shot_scaler.py:1129` `def main()` -- Main entry point for the zero-shot scaler.
+
+## wilmore_rbc.py
+Depends on: `willmore_crsital2.py`
+- `SpectralLayer.__init__` (method) `wilmore_rbc.py:57` `def __init__(self, channels, grid_size)`
+- `SpectralLayer.forward` (method) `wilmore_rbc.py:68` `def forward(self, x)`
+- `MinimalSurfaceSpectralNetwork.__init__` (method) `wilmore_rbc.py:91` `def __init__(self, grid_size, hidden_dim, expansion_dim, num_spectral_layers, input_channels, output_channels)`
+- `MinimalSurfaceSpectralNetwork.forward` (method) `wilmore_rbc.py:112` `def forward(self, x)`
+- `CheckpointLoader.load` (method) `wilmore_rbc.py:127` `def load(checkpoint_path, device)`
+- `ModelBuilder.build` (method) `wilmore_rbc.py:137` `def build(config)`
+- `ModelBuilder.load_from_checkpoint` (method) `wilmore_rbc.py:148` `def load_from_checkpoint(checkpoint_path, config)`
+- `RBCMeshLoader.load` (method) `wilmore_rbc.py:176` `def load(vert_path, face_path)`
+- `ImprovedSphericalProjector.__init__` (method) `wilmore_rbc.py:209` `def __init__(self, grid_size, smoothing_sigma)`
+- `ImprovedSphericalProjector.compute_vertex_areas` (method) `wilmore_rbc.py:217` `def compute_vertex_areas(self, vertices, faces)` -- Compute approximate area associated with each vertex.
+- `ImprovedSphericalProjector.project_mesh` (method) `wilmore_rbc.py:232` `def project_mesh(self, vertices, faces, use_rbf)` -- Project mesh onto spherical grid with proper area weighting.
+- `ImprovedSphericalProjector.to_cartesian` (method) `wilmore_rbc.py:355` `def to_cartesian(self, r_grid, scale)` -- Convert spherical grid back to 3D vertices.
+- `CylindricalProjector.__init__` (method) `wilmore_rbc.py:388` `def __init__(self, grid_size, smoothing_sigma)`
+- `CylindricalProjector.project_mesh` (method) `wilmore_rbc.py:396` `def project_mesh(self, vertices, faces)` -- Project mesh using cylindrical coordinates.
+- `CylindricalProjector.to_cartesian` (method) `wilmore_rbc.py:445` `def to_cartesian(self, rho_grid, z_scale, rho_scale)` -- Convert cylindrical grid back to 3D vertices.
+- `SyntheticShapeGenerator.__init__` (method) `wilmore_rbc.py:475` `def __init__(self, grid_size)`
+- `SyntheticShapeGenerator.create_sphere` (method) `wilmore_rbc.py:481` `def create_sphere(self, radius)`
+- `SyntheticShapeGenerator.create_biconcave` (method) `wilmore_rbc.py:484` `def create_biconcave(self, radius, dimple_depth)` -- Create biconcave disc shape using Evans-Fung model.
+- `SyntheticShapeGenerator.create_evans_fung_rbc` (method) `wilmore_rbc.py:490` `def create_evans_fung_rbc(self, radius, dimple_depth, thickness)` -- Create RBC shape using Evans-Fung parametrization.
+- `WillmoreMetricsCalculator.__init__` (method) `wilmore_rbc.py:520` `def __init__(self, grid_size)`
+- `WillmoreMetricsCalculator.compute_willmore` (method) `wilmore_rbc.py:523` `def compute_willmore(self, surface)`
+- `WillmoreMetricsCalculator.compute_curvature_stats` (method) `wilmore_rbc.py:527` `def compute_curvature_stats(self, surface)`
+- `SurfaceEvolver.__init__` (method) `wilmore_rbc.py:548` `def __init__(self, model, config)`
+- `SurfaceEvolver.evolve` (method) `wilmore_rbc.py:579` `def evolve(self, initial_surface)`
+- `MeshExporter.save_obj` (method) `wilmore_rbc.py:627` `def save_obj(vertices, faces, filepath)`
+- `MeshExporter.save_html_comparison` (method) `wilmore_rbc.py:636` `def save_html_comparison(original_vertices, original_faces, projected_vertices, projected_faces, evolved_vertices...`
+- `RBCReconstructionPipeline.__init__` (method) `wilmore_rbc.py:794` `def __init__(self, config)`
+- `RBCReconstructionPipeline.run` (method) `wilmore_rbc.py:805` `def run(self, checkpoint_path, vert_path, face_path, output_dir, projection_type)`
+- `RBCReconstructionPipeline.build_argument_parser` (method) `wilmore_rbc.py:960` `def build_argument_parser()`
+- `RBCReconstructionPipeline.main` (method) `wilmore_rbc.py:1046` `def main()`

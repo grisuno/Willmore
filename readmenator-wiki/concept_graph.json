@@ -1,0 +1,2389 @@
+{
+  "concepts": [
+    {
+      "name": "compute",
+      "files": [
+        "lol.py",
+        "model_Reco.py",
+        "rbc.py",
+        "rbc_model_reconstruction (1).py",
+        "rbc_model_reconstruction.py",
+        "rbc_model_reconstruction_128.py",
+        "rbc_willmore_analysis.py",
+        "rbc_willmore_analysis2.py",
+        "willmore_crsital2.py",
+        "willmore_crystallography_suite.py.py",
+        "willmore_zero_shot_scaler.py",
+        "wilmore_rbc.py"
+      ],
+      "mentions": 112,
+      "confidence": "EXTRACTED"
+    },
+    {
+      "name": "load",
+      "files": [
+        "model_Reco.py",
+        "rbc.py",
+        "rbc_model_reconstruction (1).py",
+        "rbc_model_reconstruction.py",
+        "rbc_model_reconstruction_128.py",
+        "rbc_willmore_analysis.py",
+        "rbc_willmore_analysis2.py",
+        "test.py",
+        "willmore_crsital2.py",
+        "willmore_crystallography_suite.py.py",
+        "willmore_zero_shot_scaler.py",
+        "wilmore_rbc.py"
+      ],
+      "mentions": 46,
+      "confidence": "EXTRACTED"
+    },
+    {
+      "name": "model",
+      "files": [
+        "model_Reco.py",
+        "rbc.py",
+        "rbc_model_reconstruction (1).py",
+        "rbc_model_reconstruction.py",
+        "rbc_model_reconstruction_128.py",
+        "rbc_willmore_analysis.py",
+        "rbc_willmore_analysis2.py",
+        "test.py",
+        "willmore_crystallography_suite.py.py",
+        "willmore_zero_shot_scaler.py",
+        "wilmore_rbc.py"
+      ],
+      "mentions": 88,
+      "confidence": "EXTRACTED"
+    },
+    {
+      "name": "save",
+      "files": [
+        "lol.py",
+        "model_Reco.py",
+        "rbc.py",
+        "rbc_model_reconstruction (1).py",
+        "rbc_model_reconstruction.py",
+        "rbc_model_reconstruction_128.py",
+        "rbc_willmore_analysis.py",
+        "rbc_willmore_analysis2.py",
+        "willmore_crsital2.py",
+        "willmore_zero_shot_scaler.py",
+        "wilmore_rbc.py"
+      ],
+      "mentions": 30,
+      "confidence": "EXTRACTED"
+    },
+    {
+      "name": "willmore",
+      "files": [
+        "rbc.py",
+        "rbc_model_reconstruction (1).py",
+        "rbc_model_reconstruction.py",
+        "rbc_model_reconstruction_128.py",
+        "rbc_willmore_analysis.py",
+        "rbc_willmore_analysis2.py",
+        "willmore_crsital2.py",
+        "willmore_crystallography_suite.py.py",
+        "willmore_zero_shot_scaler.py",
+        "wilmore_rbc.py"
+      ],
+      "mentions": 72,
+      "confidence": "EXTRACTED"
+    },
+    {
+      "name": "surface",
+      "files": [
+        "rbc.py",
+        "rbc_model_reconstruction (1).py",
+        "rbc_model_reconstruction.py",
+        "rbc_model_reconstruction_128.py",
+        "rbc_willmore_analysis.py",
+        "rbc_willmore_analysis2.py",
+        "willmore_crsital2.py",
+        "willmore_crystallography_suite.py.py",
+        "willmore_zero_shot_scaler.py",
+        "wilmore_rbc.py"
+      ],
+      "mentions": 61,
+      "confidence": "EXTRACTED"
+    },
+    {
+      "name": "checkpoint",
+      "files": [
+        "rbc.py",
+        "rbc_model_reconstruction (1).py",
+        "rbc_model_reconstruction.py",
+        "rbc_model_reconstruction_128.py",
+        "rbc_willmore_analysis.py",
+        "rbc_willmore_analysis2.py",
+        "willmore_crsital2.py",
+        "willmore_crystallography_suite.py.py",
+        "willmore_zero_shot_scaler.py",
+        "wilmore_rbc.py"
+      ],
+      "mentions": 30,
+      "confidence": "EXTRACTED"
+    },
+    {
+      "name": "create",
+      "files": [
+        "lol.py",
+        "rbc.py",
+        "rbc_model_reconstruction (1).py",
+        "rbc_model_reconstruction.py",
+        "rbc_model_reconstruction_128.py",
+        "rbc_willmore_analysis.py",
+        "rbc_willmore_analysis2.py",
+        "willmore_crsital2.py",
+        "willmore_zero_shot_scaler.py",
+        "wilmore_rbc.py"
+      ],
+      "mentions": 30,
+      "confidence": "EXTRACTED"
+    },
+    {
+      "name": "rbc",
+      "files": [
+        "lol.py",
+        "model_Reco.py",
+        "rbc.py",
+        "rbc_model_reconstruction (1).py",
+        "rbc_model_reconstruction.py",
+        "rbc_model_reconstruction_128.py",
+        "rbc_willmore_analysis.py",
+        "rbc_willmore_analysis2.py",
+        "wilmore_rbc.py"
+      ],
+      "mentions": 94,
+      "confidence": "EXTRACTED"
+    },
+    {
+      "name": "using",
+      "files": [
+        "model_Reco.py",
+        "rbc.py",
+        "rbc_model_reconstruction (1).py",
+        "rbc_model_reconstruction.py",
+        "rbc_model_reconstruction_128.py",
+        "rbc_willmore_analysis.py",
+        "rbc_willmore_analysis2.py",
+        "willmore_zero_shot_scaler.py",
+        "wilmore_rbc.py"
+      ],
+      "mentions": 33,
+      "confidence": "EXTRACTED"
+    },
+    {
+      "name": "energy",
+      "files": [
+        "rbc.py",
+        "rbc_model_reconstruction (1).py",
+        "rbc_model_reconstruction.py",
+        "rbc_model_reconstruction_128.py",
+        "rbc_willmore_analysis.py",
+        "rbc_willmore_analysis2.py",
+        "willmore_crsital2.py",
+        "willmore_crystallography_suite.py.py",
+        "wilmore_rbc.py"
+      ],
+      "mentions": 31,
+      "confidence": "EXTRACTED"
+    },
+    {
+      "name": "minimal",
+      "files": [
+        "rbc.py",
+        "rbc_model_reconstruction (1).py",
+        "rbc_model_reconstruction_128.py",
+        "rbc_willmore_analysis.py",
+        "rbc_willmore_analysis2.py",
+        "willmore_crsital2.py",
+        "willmore_crystallography_suite.py.py",
+        "willmore_zero_shot_scaler.py",
+        "wilmore_rbc.py"
+      ],
+      "mentions": 31,
+      "confidence": "EXTRACTED"
+    },
+    {
+      "name": "run",
+      "files": [
+        "rbc.py",
+        "rbc_model_reconstruction (1).py",
+        "rbc_model_reconstruction.py",
+        "rbc_model_reconstruction_128.py",
+        "rbc_willmore_analysis.py",
+        "rbc_willmore_analysis2.py",
+        "willmore_crsital2.py",
+        "willmore_crystallography_suite.py.py",
+        "wilmore_rbc.py"
+      ],
+      "mentions": 22,
+      "confidence": "EXTRACTED"
+    },
+    {
+      "name": "mesh",
+      "files": [
+        "model_Reco.py",
+        "rbc.py",
+        "rbc_model_reconstruction (1).py",
+        "rbc_model_reconstruction.py",
+        "rbc_model_reconstruction_128.py",
+        "rbc_willmore_analysis.py",
+        "rbc_willmore_analysis2.py",
+        "wilmore_rbc.py"
+      ],
+      "mentions": 56,
+      "confidence": "EXTRACTED"
+    },
+    {
+      "name": "curvature",
+      "files": [
+        "rbc_model_reconstruction.py",
+        "rbc_model_reconstruction_128.py",
+        "rbc_willmore_analysis.py",
+        "rbc_willmore_analysis2.py",
+        "willmore_crsital2.py",
+        "willmore_crystallography_suite.py.py",
+        "willmore_zero_shot_scaler.py",
+        "wilmore_rbc.py"
+      ],
+      "mentions": 53,
+      "confidence": "EXTRACTED"
+    },
+    {
+      "name": "trained",
+      "files": [
+        "rbc.py",
+        "rbc_model_reconstruction (1).py",
+        "rbc_model_reconstruction.py",
+        "rbc_model_reconstruction_128.py",
+        "rbc_willmore_analysis.py",
+        "rbc_willmore_analysis2.py",
+        "willmore_zero_shot_scaler.py",
+        "wilmore_rbc.py"
+      ],
+      "mentions": 11,
+      "confidence": "EXTRACTED"
+    },
+    {
+      "name": "obj",
+      "files": [
+        "lol.py",
+        "model_Reco.py",
+        "rbc.py",
+        "rbc_model_reconstruction (1).py",
+        "rbc_model_reconstruction_128.py",
+        "rbc_willmore_analysis.py",
+        "rbc_willmore_analysis2.py",
+        "wilmore_rbc.py"
+      ],
+      "mentions": 10,
+      "confidence": "EXTRACTED"
+    },
+    {
+      "name": "spectral",
+      "files": [
+        "rbc_model_reconstruction_128.py",
+        "rbc_willmore_analysis.py",
+        "rbc_willmore_analysis2.py",
+        "willmore_crsital2.py",
+        "willmore_crystallography_suite.py.py",
+        "willmore_zero_shot_scaler.py",
+        "wilmore_rbc.py"
+      ],
+      "mentions": 48,
+      "confidence": "EXTRACTED"
+    },
+    {
+      "name": "reconstruction",
+      "files": [
+        "model_Reco.py",
+        "rbc.py",
+        "rbc_model_reconstruction (1).py",
+        "rbc_model_reconstruction.py",
+        "rbc_model_reconstruction_128.py",
+        "willmore_crystallography_suite.py.py",
+        "wilmore_rbc.py"
+      ],
+      "mentions": 29,
+      "confidence": "EXTRACTED"
+    },
+    {
+      "name": "shape",
+      "files": [
+        "rbc.py",
+        "rbc_model_reconstruction (1).py",
+        "rbc_model_reconstruction_128.py",
+        "rbc_willmore_analysis.py",
+        "rbc_willmore_analysis2.py",
+        "willmore_zero_shot_scaler.py",
+        "wilmore_rbc.py"
+      ],
+      "mentions": 23,
+      "confidence": "EXTRACTED"
+    },
+    {
+      "name": "open",
+      "files": [
+        "rbc.py",
+        "rbc_model_reconstruction (1).py",
+        "rbc_model_reconstruction.py",
+        "rbc_model_reconstruction_128.py",
+        "rbc_willmore_analysis.py",
+        "rbc_willmore_analysis2.py",
+        "wilmore_rbc.py"
+      ],
+      "mentions": 14,
+      "confidence": "EXTRACTED"
+    },
+    {
+      "name": "comparison",
+      "files": [
+        "rbc.py",
+        "rbc_model_reconstruction (1).py",
+        "rbc_model_reconstruction.py",
+        "rbc_model_reconstruction_128.py",
+        "rbc_willmore_analysis.py",
+        "rbc_willmore_analysis2.py",
+        "wilmore_rbc.py"
+      ],
+      "mentions": 13,
+      "confidence": "EXTRACTED"
+    },
+    {
+      "name": "vertices",
+      "files": [
+        "rbc.py",
+        "rbc_model_reconstruction (1).py",
+        "rbc_model_reconstruction.py",
+        "rbc_model_reconstruction_128.py",
+        "rbc_willmore_analysis.py",
+        "rbc_willmore_analysis2.py",
+        "wilmore_rbc.py"
+      ],
+      "mentions": 13,
+      "confidence": "EXTRACTED"
+    },
+    {
+      "name": "config",
+      "files": [
+        "rbc_model_reconstruction_128.py",
+        "rbc_willmore_analysis.py",
+        "rbc_willmore_analysis2.py",
+        "willmore_crsital2.py",
+        "willmore_crystallography_suite.py.py",
+        "willmore_zero_shot_scaler.py",
+        "wilmore_rbc.py"
+      ],
+      "mentions": 12,
+      "confidence": "EXTRACTED"
+    },
+    {
+      "name": "files",
+      "files": [
+        "rbc.py",
+        "rbc_model_reconstruction (1).py",
+        "rbc_model_reconstruction.py",
+        "rbc_model_reconstruction_128.py",
+        "rbc_willmore_analysis.py",
+        "rbc_willmore_analysis2.py",
+        "wilmore_rbc.py"
+      ],
+      "mentions": 11,
+      "confidence": "EXTRACTED"
+    },
+    {
+      "name": "all",
+      "files": [
+        "rbc.py",
+        "rbc_model_reconstruction (1).py",
+        "rbc_model_reconstruction.py",
+        "rbc_willmore_analysis.py",
+        "rbc_willmore_analysis2.py",
+        "willmore_crsital2.py",
+        "willmore_crystallography_suite.py.py"
+      ],
+      "mentions": 9,
+      "confidence": "EXTRACTED"
+    },
+    {
+      "name": "blood",
+      "files": [
+        "rbc.py",
+        "rbc_model_reconstruction (1).py",
+        "rbc_model_reconstruction.py",
+        "rbc_model_reconstruction_128.py",
+        "rbc_willmore_analysis.py",
+        "rbc_willmore_analysis2.py",
+        "wilmore_rbc.py"
+      ],
+      "mentions": 9,
+      "confidence": "EXTRACTED"
+    },
+    {
+      "name": "cell",
+      "files": [
+        "rbc.py",
+        "rbc_model_reconstruction (1).py",
+        "rbc_model_reconstruction.py",
+        "rbc_model_reconstruction_128.py",
+        "rbc_willmore_analysis.py",
+        "rbc_willmore_analysis2.py",
+        "wilmore_rbc.py"
+      ],
+      "mentions": 9,
+      "confidence": "EXTRACTED"
+    },
+    {
+      "name": "red",
+      "files": [
+        "rbc.py",
+        "rbc_model_reconstruction (1).py",
+        "rbc_model_reconstruction.py",
+        "rbc_model_reconstruction_128.py",
+        "rbc_willmore_analysis.py",
+        "rbc_willmore_analysis2.py",
+        "wilmore_rbc.py"
+      ],
+      "mentions": 9,
+      "confidence": "EXTRACTED"
+    },
+    {
+      "name": "operator",
+      "files": [
+        "model_Reco.py",
+        "rbc.py",
+        "rbc_model_reconstruction (1).py",
+        "rbc_willmore_analysis.py",
+        "rbc_willmore_analysis2.py",
+        "willmore_crsital2.py",
+        "willmore_crystallography_suite.py.py"
+      ],
+      "mentions": 7,
+      "confidence": "EXTRACTED"
+    },
+    {
+      "name": "grid",
+      "files": [
+        "rbc.py",
+        "rbc_model_reconstruction (1).py",
+        "rbc_model_reconstruction.py",
+        "rbc_model_reconstruction_128.py",
+        "willmore_zero_shot_scaler.py",
+        "wilmore_rbc.py"
+      ],
+      "mentions": 39,
+      "confidence": "EXTRACTED"
+    },
+    {
+      "name": "metrics",
+      "files": [
+        "lol.py",
+        "rbc_model_reconstruction_128.py",
+        "willmore_crsital2.py",
+        "willmore_crystallography_suite.py.py",
+        "willmore_zero_shot_scaler.py",
+        "wilmore_rbc.py"
+      ],
+      "mentions": 36,
+      "confidence": "EXTRACTED"
+    },
+    {
+      "name": "spherical",
+      "files": [
+        "lol.py",
+        "model_Reco.py",
+        "rbc.py",
+        "rbc_model_reconstruction (1).py",
+        "rbc_model_reconstruction_128.py",
+        "wilmore_rbc.py"
+      ],
+      "mentions": 35,
+      "confidence": "EXTRACTED"
+    },
+    {
+      "name": "biconcave",
+      "files": [
+        "rbc.py",
+        "rbc_model_reconstruction (1).py",
+        "rbc_model_reconstruction_128.py",
+        "rbc_willmore_analysis.py",
+        "rbc_willmore_analysis2.py",
+        "wilmore_rbc.py"
+      ],
+      "mentions": 22,
+      "confidence": "EXTRACTED"
+    },
+    {
+      "name": "calculator",
+      "files": [
+        "rbc_model_reconstruction_128.py",
+        "rbc_willmore_analysis.py",
+        "rbc_willmore_analysis2.py",
+        "willmore_crsital2.py",
+        "willmore_crystallography_suite.py.py",
+        "wilmore_rbc.py"
+      ],
+      "mentions": 21,
+      "confidence": "EXTRACTED"
+    },
+    {
+      "name": "area",
+      "files": [
+        "rbc_model_reconstruction_128.py",
+        "rbc_willmore_analysis.py",
+        "rbc_willmore_analysis2.py",
+        "willmore_crsital2.py",
+        "willmore_crystallography_suite.py.py",
+        "wilmore_rbc.py"
+      ],
+      "mentions": 20,
+      "confidence": "EXTRACTED"
+    },
+    {
+      "name": "configuration",
+      "files": [
+        "rbc_model_reconstruction_128.py",
+        "rbc_willmore_analysis.py",
+        "rbc_willmore_analysis2.py",
+        "willmore_crystallography_suite.py.py",
+        "willmore_zero_shot_scaler.py",
+        "wilmore_rbc.py"
+      ],
+      "mentions": 16,
+      "confidence": "EXTRACTED"
+    },
+    {
+      "name": "network",
+      "files": [
+        "rbc_model_reconstruction_128.py",
+        "rbc_willmore_analysis.py",
+        "rbc_willmore_analysis2.py",
+        "willmore_crsital2.py",
+        "willmore_crystallography_suite.py.py",
+        "wilmore_rbc.py"
+      ],
+      "mentions": 16,
+      "confidence": "EXTRACTED"
+    },
+    {
+      "name": "geometry",
+      "files": [
+        "rbc_model_reconstruction_128.py",
+        "rbc_willmore_analysis.py",
+        "rbc_willmore_analysis2.py",
+        "willmore_crsital2.py",
+        "willmore_crystallography_suite.py.py",
+        "wilmore_rbc.py"
+      ],
+      "mentions": 15,
+      "confidence": "EXTRACTED"
+    },
+    {
+      "name": "gaussian",
+      "files": [
+        "rbc_model_reconstruction_128.py",
+        "rbc_willmore_analysis.py",
+        "rbc_willmore_analysis2.py",
+        "willmore_crsital2.py",
+        "willmore_crystallography_suite.py.py",
+        "wilmore_rbc.py"
+      ],
+      "mentions": 14,
+      "confidence": "EXTRACTED"
+    },
+    {
+      "name": "forward",
+      "files": [
+        "rbc_model_reconstruction_128.py",
+        "rbc_willmore_analysis.py",
+        "rbc_willmore_analysis2.py",
+        "willmore_crsital2.py",
+        "willmore_crystallography_suite.py.py",
+        "wilmore_rbc.py"
+      ],
+      "mentions": 13,
+      "confidence": "EXTRACTED"
+    },
+    {
+      "name": "layer",
+      "files": [
+        "rbc_model_reconstruction_128.py",
+        "rbc_willmore_analysis.py",
+        "rbc_willmore_analysis2.py",
+        "willmore_crsital2.py",
+        "willmore_crystallography_suite.py.py",
+        "wilmore_rbc.py"
+      ],
+      "mentions": 12,
+      "confidence": "EXTRACTED"
+    },
+    {
+      "name": "cartesian",
+      "files": [
+        "lol.py",
+        "model_Reco.py",
+        "rbc.py",
+        "rbc_model_reconstruction (1).py",
+        "rbc_model_reconstruction_128.py",
+        "wilmore_rbc.py"
+      ],
+      "mentions": 10,
+      "confidence": "EXTRACTED"
+    },
+    {
+      "name": "sphere",
+      "files": [
+        "rbc.py",
+        "rbc_model_reconstruction (1).py",
+        "rbc_model_reconstruction_128.py",
+        "rbc_willmore_analysis.py",
+        "rbc_willmore_analysis2.py",
+        "wilmore_rbc.py"
+      ],
+      "mentions": 10,
+      "confidence": "EXTRACTED"
+    },
+    {
+      "name": "html",
+      "files": [
+        "model_Reco.py",
+        "rbc.py",
+        "rbc_model_reconstruction (1).py",
+        "rbc_model_reconstruction.py",
+        "rbc_model_reconstruction_128.py",
+        "wilmore_rbc.py"
+      ],
+      "mentions": 9,
+      "confidence": "EXTRACTED"
+    },
+    {
+      "name": "disc",
+      "files": [
+        "rbc.py",
+        "rbc_model_reconstruction (1).py",
+        "rbc_model_reconstruction_128.py",
+        "rbc_willmore_analysis.py",
+        "rbc_willmore_analysis2.py",
+        "wilmore_rbc.py"
+      ],
+      "mentions": 8,
+      "confidence": "EXTRACTED"
+    },
+    {
+      "name": "generator",
+      "files": [
+        "rbc_model_reconstruction_128.py",
+        "rbc_willmore_analysis.py",
+        "rbc_willmore_analysis2.py",
+        "willmore_crsital2.py",
+        "willmore_crystallography_suite.py.py",
+        "wilmore_rbc.py"
+      ],
+      "mentions": 8,
+      "confidence": "EXTRACTED"
+    },
+    {
+      "name": "creates",
+      "files": [
+        "rbc.py",
+        "rbc_model_reconstruction (1).py",
+        "rbc_model_reconstruction_128.py",
+        "rbc_willmore_analysis.py",
+        "rbc_willmore_analysis2.py",
+        "wilmore_rbc.py"
+      ],
+      "mentions": 6,
+      "confidence": "EXTRACTED"
+    },
+    {
+      "name": "vertex",
+      "files": [
+        "rbc_model_reconstruction.py",
+        "rbc_model_reconstruction_128.py",
+        "rbc_willmore_analysis.py",
+        "rbc_willmore_analysis2.py",
+        "wilmore_rbc.py"
+      ],
+      "mentions": 30,
+      "confidence": "EXTRACTED"
+    },
+    {
+      "name": "mean",
+      "files": [
+        "rbc_model_reconstruction.py",
+        "rbc_willmore_analysis.py",
+        "rbc_willmore_analysis2.py",
+        "willmore_crsital2.py",
+        "willmore_crystallography_suite.py.py"
+      ],
+      "mentions": 23,
+      "confidence": "EXTRACTED"
+    }
+  ],
+  "relations": [
+    {
+      "source": "load",
+      "target": "all",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "model_Reco.py->willmore_crsital2.py",
+        "rbc.py->willmore_crsital2.py",
+        "rbc_model_reconstruction (1).py->willmore_crsital2.py",
+        "rbc_model_reconstruction.py->willmore_crsital2.py",
+        "rbc_model_reconstruction_128.py->willmore_crsital2.py",
+        "test.py->willmore_crsital2.py",
+        "willmore_zero_shot_scaler.py->willmore_crsital2.py",
+        "wilmore_rbc.py->willmore_crsital2.py"
+      ]
+    },
+    {
+      "source": "load",
+      "target": "area",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "model_Reco.py->willmore_crsital2.py",
+        "rbc.py->willmore_crsital2.py",
+        "rbc_model_reconstruction (1).py->willmore_crsital2.py",
+        "rbc_model_reconstruction.py->willmore_crsital2.py",
+        "rbc_model_reconstruction_128.py->willmore_crsital2.py",
+        "test.py->willmore_crsital2.py",
+        "willmore_zero_shot_scaler.py->willmore_crsital2.py",
+        "wilmore_rbc.py->willmore_crsital2.py"
+      ]
+    },
+    {
+      "source": "load",
+      "target": "calculator",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "model_Reco.py->willmore_crsital2.py",
+        "rbc.py->willmore_crsital2.py",
+        "rbc_model_reconstruction (1).py->willmore_crsital2.py",
+        "rbc_model_reconstruction.py->willmore_crsital2.py",
+        "rbc_model_reconstruction_128.py->willmore_crsital2.py",
+        "test.py->willmore_crsital2.py",
+        "willmore_zero_shot_scaler.py->willmore_crsital2.py",
+        "wilmore_rbc.py->willmore_crsital2.py"
+      ]
+    },
+    {
+      "source": "load",
+      "target": "checkpoint",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "model_Reco.py->willmore_crsital2.py",
+        "rbc.py->willmore_crsital2.py",
+        "rbc_model_reconstruction (1).py->willmore_crsital2.py",
+        "rbc_model_reconstruction.py->willmore_crsital2.py",
+        "rbc_model_reconstruction_128.py->willmore_crsital2.py",
+        "test.py->willmore_crsital2.py",
+        "willmore_zero_shot_scaler.py->willmore_crsital2.py",
+        "wilmore_rbc.py->willmore_crsital2.py"
+      ]
+    },
+    {
+      "source": "load",
+      "target": "compute",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "model_Reco.py->willmore_crsital2.py",
+        "rbc.py->willmore_crsital2.py",
+        "rbc_model_reconstruction (1).py->willmore_crsital2.py",
+        "rbc_model_reconstruction.py->willmore_crsital2.py",
+        "rbc_model_reconstruction_128.py->willmore_crsital2.py",
+        "test.py->willmore_crsital2.py",
+        "willmore_zero_shot_scaler.py->willmore_crsital2.py",
+        "wilmore_rbc.py->willmore_crsital2.py"
+      ]
+    },
+    {
+      "source": "load",
+      "target": "config",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "model_Reco.py->willmore_crsital2.py",
+        "rbc.py->willmore_crsital2.py",
+        "rbc_model_reconstruction (1).py->willmore_crsital2.py",
+        "rbc_model_reconstruction.py->willmore_crsital2.py",
+        "rbc_model_reconstruction_128.py->willmore_crsital2.py",
+        "test.py->willmore_crsital2.py",
+        "willmore_zero_shot_scaler.py->willmore_crsital2.py",
+        "wilmore_rbc.py->willmore_crsital2.py"
+      ]
+    },
+    {
+      "source": "load",
+      "target": "create",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "model_Reco.py->willmore_crsital2.py",
+        "rbc.py->willmore_crsital2.py",
+        "rbc_model_reconstruction (1).py->willmore_crsital2.py",
+        "rbc_model_reconstruction.py->willmore_crsital2.py",
+        "rbc_model_reconstruction_128.py->willmore_crsital2.py",
+        "test.py->willmore_crsital2.py",
+        "willmore_zero_shot_scaler.py->willmore_crsital2.py",
+        "wilmore_rbc.py->willmore_crsital2.py"
+      ]
+    },
+    {
+      "source": "load",
+      "target": "curvature",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "model_Reco.py->willmore_crsital2.py",
+        "rbc.py->willmore_crsital2.py",
+        "rbc_model_reconstruction (1).py->willmore_crsital2.py",
+        "rbc_model_reconstruction.py->willmore_crsital2.py",
+        "rbc_model_reconstruction_128.py->willmore_crsital2.py",
+        "test.py->willmore_crsital2.py",
+        "willmore_zero_shot_scaler.py->willmore_crsital2.py",
+        "wilmore_rbc.py->willmore_crsital2.py"
+      ]
+    },
+    {
+      "source": "load",
+      "target": "energy",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "model_Reco.py->willmore_crsital2.py",
+        "rbc.py->willmore_crsital2.py",
+        "rbc_model_reconstruction (1).py->willmore_crsital2.py",
+        "rbc_model_reconstruction.py->willmore_crsital2.py",
+        "rbc_model_reconstruction_128.py->willmore_crsital2.py",
+        "test.py->willmore_crsital2.py",
+        "willmore_zero_shot_scaler.py->willmore_crsital2.py",
+        "wilmore_rbc.py->willmore_crsital2.py"
+      ]
+    },
+    {
+      "source": "load",
+      "target": "forward",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "model_Reco.py->willmore_crsital2.py",
+        "rbc.py->willmore_crsital2.py",
+        "rbc_model_reconstruction (1).py->willmore_crsital2.py",
+        "rbc_model_reconstruction.py->willmore_crsital2.py",
+        "rbc_model_reconstruction_128.py->willmore_crsital2.py",
+        "test.py->willmore_crsital2.py",
+        "willmore_zero_shot_scaler.py->willmore_crsital2.py",
+        "wilmore_rbc.py->willmore_crsital2.py"
+      ]
+    },
+    {
+      "source": "load",
+      "target": "gaussian",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "model_Reco.py->willmore_crsital2.py",
+        "rbc.py->willmore_crsital2.py",
+        "rbc_model_reconstruction (1).py->willmore_crsital2.py",
+        "rbc_model_reconstruction.py->willmore_crsital2.py",
+        "rbc_model_reconstruction_128.py->willmore_crsital2.py",
+        "test.py->willmore_crsital2.py",
+        "willmore_zero_shot_scaler.py->willmore_crsital2.py",
+        "wilmore_rbc.py->willmore_crsital2.py"
+      ]
+    },
+    {
+      "source": "load",
+      "target": "generator",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "model_Reco.py->willmore_crsital2.py",
+        "rbc.py->willmore_crsital2.py",
+        "rbc_model_reconstruction (1).py->willmore_crsital2.py",
+        "rbc_model_reconstruction.py->willmore_crsital2.py",
+        "rbc_model_reconstruction_128.py->willmore_crsital2.py",
+        "test.py->willmore_crsital2.py",
+        "willmore_zero_shot_scaler.py->willmore_crsital2.py",
+        "wilmore_rbc.py->willmore_crsital2.py"
+      ]
+    },
+    {
+      "source": "load",
+      "target": "geometry",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "model_Reco.py->willmore_crsital2.py",
+        "rbc.py->willmore_crsital2.py",
+        "rbc_model_reconstruction (1).py->willmore_crsital2.py",
+        "rbc_model_reconstruction.py->willmore_crsital2.py",
+        "rbc_model_reconstruction_128.py->willmore_crsital2.py",
+        "test.py->willmore_crsital2.py",
+        "willmore_zero_shot_scaler.py->willmore_crsital2.py",
+        "wilmore_rbc.py->willmore_crsital2.py"
+      ]
+    },
+    {
+      "source": "load",
+      "target": "layer",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "model_Reco.py->willmore_crsital2.py",
+        "rbc.py->willmore_crsital2.py",
+        "rbc_model_reconstruction (1).py->willmore_crsital2.py",
+        "rbc_model_reconstruction.py->willmore_crsital2.py",
+        "rbc_model_reconstruction_128.py->willmore_crsital2.py",
+        "test.py->willmore_crsital2.py",
+        "willmore_zero_shot_scaler.py->willmore_crsital2.py",
+        "wilmore_rbc.py->willmore_crsital2.py"
+      ]
+    },
+    {
+      "source": "load",
+      "target": "mean",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "model_Reco.py->willmore_crsital2.py",
+        "rbc.py->willmore_crsital2.py",
+        "rbc_model_reconstruction (1).py->willmore_crsital2.py",
+        "rbc_model_reconstruction.py->willmore_crsital2.py",
+        "rbc_model_reconstruction_128.py->willmore_crsital2.py",
+        "test.py->willmore_crsital2.py",
+        "willmore_zero_shot_scaler.py->willmore_crsital2.py",
+        "wilmore_rbc.py->willmore_crsital2.py"
+      ]
+    },
+    {
+      "source": "load",
+      "target": "metrics",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "model_Reco.py->willmore_crsital2.py",
+        "rbc.py->willmore_crsital2.py",
+        "rbc_model_reconstruction (1).py->willmore_crsital2.py",
+        "rbc_model_reconstruction.py->willmore_crsital2.py",
+        "rbc_model_reconstruction_128.py->willmore_crsital2.py",
+        "test.py->willmore_crsital2.py",
+        "willmore_zero_shot_scaler.py->willmore_crsital2.py",
+        "wilmore_rbc.py->willmore_crsital2.py"
+      ]
+    },
+    {
+      "source": "load",
+      "target": "minimal",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "model_Reco.py->willmore_crsital2.py",
+        "rbc.py->willmore_crsital2.py",
+        "rbc_model_reconstruction (1).py->willmore_crsital2.py",
+        "rbc_model_reconstruction.py->willmore_crsital2.py",
+        "rbc_model_reconstruction_128.py->willmore_crsital2.py",
+        "test.py->willmore_crsital2.py",
+        "willmore_zero_shot_scaler.py->willmore_crsital2.py",
+        "wilmore_rbc.py->willmore_crsital2.py"
+      ]
+    },
+    {
+      "source": "load",
+      "target": "network",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "model_Reco.py->willmore_crsital2.py",
+        "rbc.py->willmore_crsital2.py",
+        "rbc_model_reconstruction (1).py->willmore_crsital2.py",
+        "rbc_model_reconstruction.py->willmore_crsital2.py",
+        "rbc_model_reconstruction_128.py->willmore_crsital2.py",
+        "test.py->willmore_crsital2.py",
+        "willmore_zero_shot_scaler.py->willmore_crsital2.py",
+        "wilmore_rbc.py->willmore_crsital2.py"
+      ]
+    },
+    {
+      "source": "load",
+      "target": "operator",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "model_Reco.py->willmore_crsital2.py",
+        "rbc.py->willmore_crsital2.py",
+        "rbc_model_reconstruction (1).py->willmore_crsital2.py",
+        "rbc_model_reconstruction.py->willmore_crsital2.py",
+        "rbc_model_reconstruction_128.py->willmore_crsital2.py",
+        "test.py->willmore_crsital2.py",
+        "willmore_zero_shot_scaler.py->willmore_crsital2.py",
+        "wilmore_rbc.py->willmore_crsital2.py"
+      ]
+    },
+    {
+      "source": "load",
+      "target": "run",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "model_Reco.py->willmore_crsital2.py",
+        "rbc.py->willmore_crsital2.py",
+        "rbc_model_reconstruction (1).py->willmore_crsital2.py",
+        "rbc_model_reconstruction.py->willmore_crsital2.py",
+        "rbc_model_reconstruction_128.py->willmore_crsital2.py",
+        "test.py->willmore_crsital2.py",
+        "willmore_zero_shot_scaler.py->willmore_crsital2.py",
+        "wilmore_rbc.py->willmore_crsital2.py"
+      ]
+    },
+    {
+      "source": "load",
+      "target": "save",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "model_Reco.py->willmore_crsital2.py",
+        "rbc.py->willmore_crsital2.py",
+        "rbc_model_reconstruction (1).py->willmore_crsital2.py",
+        "rbc_model_reconstruction.py->willmore_crsital2.py",
+        "rbc_model_reconstruction_128.py->willmore_crsital2.py",
+        "test.py->willmore_crsital2.py",
+        "willmore_zero_shot_scaler.py->willmore_crsital2.py",
+        "wilmore_rbc.py->willmore_crsital2.py"
+      ]
+    },
+    {
+      "source": "load",
+      "target": "spectral",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "model_Reco.py->willmore_crsital2.py",
+        "rbc.py->willmore_crsital2.py",
+        "rbc_model_reconstruction (1).py->willmore_crsital2.py",
+        "rbc_model_reconstruction.py->willmore_crsital2.py",
+        "rbc_model_reconstruction_128.py->willmore_crsital2.py",
+        "test.py->willmore_crsital2.py",
+        "willmore_zero_shot_scaler.py->willmore_crsital2.py",
+        "wilmore_rbc.py->willmore_crsital2.py"
+      ]
+    },
+    {
+      "source": "load",
+      "target": "surface",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "model_Reco.py->willmore_crsital2.py",
+        "rbc.py->willmore_crsital2.py",
+        "rbc_model_reconstruction (1).py->willmore_crsital2.py",
+        "rbc_model_reconstruction.py->willmore_crsital2.py",
+        "rbc_model_reconstruction_128.py->willmore_crsital2.py",
+        "test.py->willmore_crsital2.py",
+        "willmore_zero_shot_scaler.py->willmore_crsital2.py",
+        "wilmore_rbc.py->willmore_crsital2.py"
+      ]
+    },
+    {
+      "source": "load",
+      "target": "willmore",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "model_Reco.py->willmore_crsital2.py",
+        "rbc.py->willmore_crsital2.py",
+        "rbc_model_reconstruction (1).py->willmore_crsital2.py",
+        "rbc_model_reconstruction.py->willmore_crsital2.py",
+        "rbc_model_reconstruction_128.py->willmore_crsital2.py",
+        "test.py->willmore_crsital2.py",
+        "willmore_zero_shot_scaler.py->willmore_crsital2.py",
+        "wilmore_rbc.py->willmore_crsital2.py"
+      ]
+    },
+    {
+      "source": "model",
+      "target": "all",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "model_Reco.py->willmore_crsital2.py",
+        "rbc.py->willmore_crsital2.py",
+        "rbc_model_reconstruction (1).py->willmore_crsital2.py",
+        "rbc_model_reconstruction.py->willmore_crsital2.py",
+        "rbc_model_reconstruction_128.py->willmore_crsital2.py",
+        "test.py->willmore_crsital2.py",
+        "willmore_zero_shot_scaler.py->willmore_crsital2.py",
+        "wilmore_rbc.py->willmore_crsital2.py"
+      ]
+    },
+    {
+      "source": "model",
+      "target": "area",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "model_Reco.py->willmore_crsital2.py",
+        "rbc.py->willmore_crsital2.py",
+        "rbc_model_reconstruction (1).py->willmore_crsital2.py",
+        "rbc_model_reconstruction.py->willmore_crsital2.py",
+        "rbc_model_reconstruction_128.py->willmore_crsital2.py",
+        "test.py->willmore_crsital2.py",
+        "willmore_zero_shot_scaler.py->willmore_crsital2.py",
+        "wilmore_rbc.py->willmore_crsital2.py"
+      ]
+    },
+    {
+      "source": "model",
+      "target": "calculator",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "model_Reco.py->willmore_crsital2.py",
+        "rbc.py->willmore_crsital2.py",
+        "rbc_model_reconstruction (1).py->willmore_crsital2.py",
+        "rbc_model_reconstruction.py->willmore_crsital2.py",
+        "rbc_model_reconstruction_128.py->willmore_crsital2.py",
+        "test.py->willmore_crsital2.py",
+        "willmore_zero_shot_scaler.py->willmore_crsital2.py",
+        "wilmore_rbc.py->willmore_crsital2.py"
+      ]
+    },
+    {
+      "source": "model",
+      "target": "checkpoint",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "model_Reco.py->willmore_crsital2.py",
+        "rbc.py->willmore_crsital2.py",
+        "rbc_model_reconstruction (1).py->willmore_crsital2.py",
+        "rbc_model_reconstruction.py->willmore_crsital2.py",
+        "rbc_model_reconstruction_128.py->willmore_crsital2.py",
+        "test.py->willmore_crsital2.py",
+        "willmore_zero_shot_scaler.py->willmore_crsital2.py",
+        "wilmore_rbc.py->willmore_crsital2.py"
+      ]
+    },
+    {
+      "source": "model",
+      "target": "compute",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "model_Reco.py->willmore_crsital2.py",
+        "rbc.py->willmore_crsital2.py",
+        "rbc_model_reconstruction (1).py->willmore_crsital2.py",
+        "rbc_model_reconstruction.py->willmore_crsital2.py",
+        "rbc_model_reconstruction_128.py->willmore_crsital2.py",
+        "test.py->willmore_crsital2.py",
+        "willmore_zero_shot_scaler.py->willmore_crsital2.py",
+        "wilmore_rbc.py->willmore_crsital2.py"
+      ]
+    },
+    {
+      "source": "model",
+      "target": "config",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "model_Reco.py->willmore_crsital2.py",
+        "rbc.py->willmore_crsital2.py",
+        "rbc_model_reconstruction (1).py->willmore_crsital2.py",
+        "rbc_model_reconstruction.py->willmore_crsital2.py",
+        "rbc_model_reconstruction_128.py->willmore_crsital2.py",
+        "test.py->willmore_crsital2.py",
+        "willmore_zero_shot_scaler.py->willmore_crsital2.py",
+        "wilmore_rbc.py->willmore_crsital2.py"
+      ]
+    },
+    {
+      "source": "model",
+      "target": "create",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "model_Reco.py->willmore_crsital2.py",
+        "rbc.py->willmore_crsital2.py",
+        "rbc_model_reconstruction (1).py->willmore_crsital2.py",
+        "rbc_model_reconstruction.py->willmore_crsital2.py",
+        "rbc_model_reconstruction_128.py->willmore_crsital2.py",
+        "test.py->willmore_crsital2.py",
+        "willmore_zero_shot_scaler.py->willmore_crsital2.py",
+        "wilmore_rbc.py->willmore_crsital2.py"
+      ]
+    },
+    {
+      "source": "model",
+      "target": "curvature",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "model_Reco.py->willmore_crsital2.py",
+        "rbc.py->willmore_crsital2.py",
+        "rbc_model_reconstruction (1).py->willmore_crsital2.py",
+        "rbc_model_reconstruction.py->willmore_crsital2.py",
+        "rbc_model_reconstruction_128.py->willmore_crsital2.py",
+        "test.py->willmore_crsital2.py",
+        "willmore_zero_shot_scaler.py->willmore_crsital2.py",
+        "wilmore_rbc.py->willmore_crsital2.py"
+      ]
+    },
+    {
+      "source": "model",
+      "target": "energy",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "model_Reco.py->willmore_crsital2.py",
+        "rbc.py->willmore_crsital2.py",
+        "rbc_model_reconstruction (1).py->willmore_crsital2.py",
+        "rbc_model_reconstruction.py->willmore_crsital2.py",
+        "rbc_model_reconstruction_128.py->willmore_crsital2.py",
+        "test.py->willmore_crsital2.py",
+        "willmore_zero_shot_scaler.py->willmore_crsital2.py",
+        "wilmore_rbc.py->willmore_crsital2.py"
+      ]
+    },
+    {
+      "source": "model",
+      "target": "forward",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "model_Reco.py->willmore_crsital2.py",
+        "rbc.py->willmore_crsital2.py",
+        "rbc_model_reconstruction (1).py->willmore_crsital2.py",
+        "rbc_model_reconstruction.py->willmore_crsital2.py",
+        "rbc_model_reconstruction_128.py->willmore_crsital2.py",
+        "test.py->willmore_crsital2.py",
+        "willmore_zero_shot_scaler.py->willmore_crsital2.py",
+        "wilmore_rbc.py->willmore_crsital2.py"
+      ]
+    },
+    {
+      "source": "model",
+      "target": "gaussian",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "model_Reco.py->willmore_crsital2.py",
+        "rbc.py->willmore_crsital2.py",
+        "rbc_model_reconstruction (1).py->willmore_crsital2.py",
+        "rbc_model_reconstruction.py->willmore_crsital2.py",
+        "rbc_model_reconstruction_128.py->willmore_crsital2.py",
+        "test.py->willmore_crsital2.py",
+        "willmore_zero_shot_scaler.py->willmore_crsital2.py",
+        "wilmore_rbc.py->willmore_crsital2.py"
+      ]
+    },
+    {
+      "source": "model",
+      "target": "generator",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "model_Reco.py->willmore_crsital2.py",
+        "rbc.py->willmore_crsital2.py",
+        "rbc_model_reconstruction (1).py->willmore_crsital2.py",
+        "rbc_model_reconstruction.py->willmore_crsital2.py",
+        "rbc_model_reconstruction_128.py->willmore_crsital2.py",
+        "test.py->willmore_crsital2.py",
+        "willmore_zero_shot_scaler.py->willmore_crsital2.py",
+        "wilmore_rbc.py->willmore_crsital2.py"
+      ]
+    },
+    {
+      "source": "model",
+      "target": "geometry",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "model_Reco.py->willmore_crsital2.py",
+        "rbc.py->willmore_crsital2.py",
+        "rbc_model_reconstruction (1).py->willmore_crsital2.py",
+        "rbc_model_reconstruction.py->willmore_crsital2.py",
+        "rbc_model_reconstruction_128.py->willmore_crsital2.py",
+        "test.py->willmore_crsital2.py",
+        "willmore_zero_shot_scaler.py->willmore_crsital2.py",
+        "wilmore_rbc.py->willmore_crsital2.py"
+      ]
+    },
+    {
+      "source": "model",
+      "target": "layer",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "model_Reco.py->willmore_crsital2.py",
+        "rbc.py->willmore_crsital2.py",
+        "rbc_model_reconstruction (1).py->willmore_crsital2.py",
+        "rbc_model_reconstruction.py->willmore_crsital2.py",
+        "rbc_model_reconstruction_128.py->willmore_crsital2.py",
+        "test.py->willmore_crsital2.py",
+        "willmore_zero_shot_scaler.py->willmore_crsital2.py",
+        "wilmore_rbc.py->willmore_crsital2.py"
+      ]
+    },
+    {
+      "source": "model",
+      "target": "load",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "model_Reco.py->willmore_crsital2.py",
+        "rbc.py->willmore_crsital2.py",
+        "rbc_model_reconstruction (1).py->willmore_crsital2.py",
+        "rbc_model_reconstruction.py->willmore_crsital2.py",
+        "rbc_model_reconstruction_128.py->willmore_crsital2.py",
+        "test.py->willmore_crsital2.py",
+        "willmore_zero_shot_scaler.py->willmore_crsital2.py",
+        "wilmore_rbc.py->willmore_crsital2.py"
+      ]
+    },
+    {
+      "source": "model",
+      "target": "mean",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "model_Reco.py->willmore_crsital2.py",
+        "rbc.py->willmore_crsital2.py",
+        "rbc_model_reconstruction (1).py->willmore_crsital2.py",
+        "rbc_model_reconstruction.py->willmore_crsital2.py",
+        "rbc_model_reconstruction_128.py->willmore_crsital2.py",
+        "test.py->willmore_crsital2.py",
+        "willmore_zero_shot_scaler.py->willmore_crsital2.py",
+        "wilmore_rbc.py->willmore_crsital2.py"
+      ]
+    },
+    {
+      "source": "model",
+      "target": "metrics",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "model_Reco.py->willmore_crsital2.py",
+        "rbc.py->willmore_crsital2.py",
+        "rbc_model_reconstruction (1).py->willmore_crsital2.py",
+        "rbc_model_reconstruction.py->willmore_crsital2.py",
+        "rbc_model_reconstruction_128.py->willmore_crsital2.py",
+        "test.py->willmore_crsital2.py",
+        "willmore_zero_shot_scaler.py->willmore_crsital2.py",
+        "wilmore_rbc.py->willmore_crsital2.py"
+      ]
+    },
+    {
+      "source": "model",
+      "target": "minimal",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "model_Reco.py->willmore_crsital2.py",
+        "rbc.py->willmore_crsital2.py",
+        "rbc_model_reconstruction (1).py->willmore_crsital2.py",
+        "rbc_model_reconstruction.py->willmore_crsital2.py",
+        "rbc_model_reconstruction_128.py->willmore_crsital2.py",
+        "test.py->willmore_crsital2.py",
+        "willmore_zero_shot_scaler.py->willmore_crsital2.py",
+        "wilmore_rbc.py->willmore_crsital2.py"
+      ]
+    },
+    {
+      "source": "model",
+      "target": "network",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "model_Reco.py->willmore_crsital2.py",
+        "rbc.py->willmore_crsital2.py",
+        "rbc_model_reconstruction (1).py->willmore_crsital2.py",
+        "rbc_model_reconstruction.py->willmore_crsital2.py",
+        "rbc_model_reconstruction_128.py->willmore_crsital2.py",
+        "test.py->willmore_crsital2.py",
+        "willmore_zero_shot_scaler.py->willmore_crsital2.py",
+        "wilmore_rbc.py->willmore_crsital2.py"
+      ]
+    },
+    {
+      "source": "model",
+      "target": "operator",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "model_Reco.py->willmore_crsital2.py",
+        "rbc.py->willmore_crsital2.py",
+        "rbc_model_reconstruction (1).py->willmore_crsital2.py",
+        "rbc_model_reconstruction.py->willmore_crsital2.py",
+        "rbc_model_reconstruction_128.py->willmore_crsital2.py",
+        "test.py->willmore_crsital2.py",
+        "willmore_zero_shot_scaler.py->willmore_crsital2.py",
+        "wilmore_rbc.py->willmore_crsital2.py"
+      ]
+    },
+    {
+      "source": "model",
+      "target": "run",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "model_Reco.py->willmore_crsital2.py",
+        "rbc.py->willmore_crsital2.py",
+        "rbc_model_reconstruction (1).py->willmore_crsital2.py",
+        "rbc_model_reconstruction.py->willmore_crsital2.py",
+        "rbc_model_reconstruction_128.py->willmore_crsital2.py",
+        "test.py->willmore_crsital2.py",
+        "willmore_zero_shot_scaler.py->willmore_crsital2.py",
+        "wilmore_rbc.py->willmore_crsital2.py"
+      ]
+    },
+    {
+      "source": "model",
+      "target": "save",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "model_Reco.py->willmore_crsital2.py",
+        "rbc.py->willmore_crsital2.py",
+        "rbc_model_reconstruction (1).py->willmore_crsital2.py",
+        "rbc_model_reconstruction.py->willmore_crsital2.py",
+        "rbc_model_reconstruction_128.py->willmore_crsital2.py",
+        "test.py->willmore_crsital2.py",
+        "willmore_zero_shot_scaler.py->willmore_crsital2.py",
+        "wilmore_rbc.py->willmore_crsital2.py"
+      ]
+    },
+    {
+      "source": "model",
+      "target": "spectral",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "model_Reco.py->willmore_crsital2.py",
+        "rbc.py->willmore_crsital2.py",
+        "rbc_model_reconstruction (1).py->willmore_crsital2.py",
+        "rbc_model_reconstruction.py->willmore_crsital2.py",
+        "rbc_model_reconstruction_128.py->willmore_crsital2.py",
+        "test.py->willmore_crsital2.py",
+        "willmore_zero_shot_scaler.py->willmore_crsital2.py",
+        "wilmore_rbc.py->willmore_crsital2.py"
+      ]
+    },
+    {
+      "source": "model",
+      "target": "surface",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "model_Reco.py->willmore_crsital2.py",
+        "rbc.py->willmore_crsital2.py",
+        "rbc_model_reconstruction (1).py->willmore_crsital2.py",
+        "rbc_model_reconstruction.py->willmore_crsital2.py",
+        "rbc_model_reconstruction_128.py->willmore_crsital2.py",
+        "test.py->willmore_crsital2.py",
+        "willmore_zero_shot_scaler.py->willmore_crsital2.py",
+        "wilmore_rbc.py->willmore_crsital2.py"
+      ]
+    },
+    {
+      "source": "model",
+      "target": "willmore",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "model_Reco.py->willmore_crsital2.py",
+        "rbc.py->willmore_crsital2.py",
+        "rbc_model_reconstruction (1).py->willmore_crsital2.py",
+        "rbc_model_reconstruction.py->willmore_crsital2.py",
+        "rbc_model_reconstruction_128.py->willmore_crsital2.py",
+        "test.py->willmore_crsital2.py",
+        "willmore_zero_shot_scaler.py->willmore_crsital2.py",
+        "wilmore_rbc.py->willmore_crsital2.py"
+      ]
+    },
+    {
+      "source": "compute",
+      "target": "all",
+      "verb": "depends_on",
+      "strength": 0.88,
+      "confidence": "INFERRED",
+      "evidence": [
+        "model_Reco.py->willmore_crsital2.py",
+        "rbc.py->willmore_crsital2.py",
+        "rbc_model_reconstruction (1).py->willmore_crsital2.py",
+        "rbc_model_reconstruction.py->willmore_crsital2.py",
+        "rbc_model_reconstruction_128.py->willmore_crsital2.py",
+        "willmore_zero_shot_scaler.py->willmore_crsital2.py",
+        "wilmore_rbc.py->willmore_crsital2.py"
+      ]
+    },
+    {
+      "source": "compute",
+      "target": "area",
+      "verb": "depends_on",
+      "strength": 0.88,
+      "confidence": "INFERRED",
+      "evidence": [
+        "model_Reco.py->willmore_crsital2.py",
+        "rbc.py->willmore_crsital2.py",
+        "rbc_model_reconstruction (1).py->willmore_crsital2.py",
+        "rbc_model_reconstruction.py->willmore_crsital2.py",
+        "rbc_model_reconstruction_128.py->willmore_crsital2.py",
+        "willmore_zero_shot_scaler.py->willmore_crsital2.py",
+        "wilmore_rbc.py->willmore_crsital2.py"
+      ]
+    },
+    {
+      "source": "compute",
+      "target": "calculator",
+      "verb": "depends_on",
+      "strength": 0.88,
+      "confidence": "INFERRED",
+      "evidence": [
+        "model_Reco.py->willmore_crsital2.py",
+        "rbc.py->willmore_crsital2.py",
+        "rbc_model_reconstruction (1).py->willmore_crsital2.py",
+        "rbc_model_reconstruction.py->willmore_crsital2.py",
+        "rbc_model_reconstruction_128.py->willmore_crsital2.py",
+        "willmore_zero_shot_scaler.py->willmore_crsital2.py",
+        "wilmore_rbc.py->willmore_crsital2.py"
+      ]
+    },
+    {
+      "source": "compute",
+      "target": "checkpoint",
+      "verb": "depends_on",
+      "strength": 0.88,
+      "confidence": "INFERRED",
+      "evidence": [
+        "model_Reco.py->willmore_crsital2.py",
+        "rbc.py->willmore_crsital2.py",
+        "rbc_model_reconstruction (1).py->willmore_crsital2.py",
+        "rbc_model_reconstruction.py->willmore_crsital2.py",
+        "rbc_model_reconstruction_128.py->willmore_crsital2.py",
+        "willmore_zero_shot_scaler.py->willmore_crsital2.py",
+        "wilmore_rbc.py->willmore_crsital2.py"
+      ]
+    },
+    {
+      "source": "compute",
+      "target": "config",
+      "verb": "depends_on",
+      "strength": 0.88,
+      "confidence": "INFERRED",
+      "evidence": [
+        "model_Reco.py->willmore_crsital2.py",
+        "rbc.py->willmore_crsital2.py",
+        "rbc_model_reconstruction (1).py->willmore_crsital2.py",
+        "rbc_model_reconstruction.py->willmore_crsital2.py",
+        "rbc_model_reconstruction_128.py->willmore_crsital2.py",
+        "willmore_zero_shot_scaler.py->willmore_crsital2.py",
+        "wilmore_rbc.py->willmore_crsital2.py"
+      ]
+    },
+    {
+      "source": "compute",
+      "target": "create",
+      "verb": "depends_on",
+      "strength": 0.88,
+      "confidence": "INFERRED",
+      "evidence": [
+        "model_Reco.py->willmore_crsital2.py",
+        "rbc.py->willmore_crsital2.py",
+        "rbc_model_reconstruction (1).py->willmore_crsital2.py",
+        "rbc_model_reconstruction.py->willmore_crsital2.py",
+        "rbc_model_reconstruction_128.py->willmore_crsital2.py",
+        "willmore_zero_shot_scaler.py->willmore_crsital2.py",
+        "wilmore_rbc.py->willmore_crsital2.py"
+      ]
+    },
+    {
+      "source": "compute",
+      "target": "curvature",
+      "verb": "depends_on",
+      "strength": 0.88,
+      "confidence": "INFERRED",
+      "evidence": [
+        "model_Reco.py->willmore_crsital2.py",
+        "rbc.py->willmore_crsital2.py",
+        "rbc_model_reconstruction (1).py->willmore_crsital2.py",
+        "rbc_model_reconstruction.py->willmore_crsital2.py",
+        "rbc_model_reconstruction_128.py->willmore_crsital2.py",
+        "willmore_zero_shot_scaler.py->willmore_crsital2.py",
+        "wilmore_rbc.py->willmore_crsital2.py"
+      ]
+    },
+    {
+      "source": "compute",
+      "target": "energy",
+      "verb": "depends_on",
+      "strength": 0.88,
+      "confidence": "INFERRED",
+      "evidence": [
+        "model_Reco.py->willmore_crsital2.py",
+        "rbc.py->willmore_crsital2.py",
+        "rbc_model_reconstruction (1).py->willmore_crsital2.py",
+        "rbc_model_reconstruction.py->willmore_crsital2.py",
+        "rbc_model_reconstruction_128.py->willmore_crsital2.py",
+        "willmore_zero_shot_scaler.py->willmore_crsital2.py",
+        "wilmore_rbc.py->willmore_crsital2.py"
+      ]
+    },
+    {
+      "source": "compute",
+      "target": "forward",
+      "verb": "depends_on",
+      "strength": 0.88,
+      "confidence": "INFERRED",
+      "evidence": [
+        "model_Reco.py->willmore_crsital2.py",
+        "rbc.py->willmore_crsital2.py",
+        "rbc_model_reconstruction (1).py->willmore_crsital2.py",
+        "rbc_model_reconstruction.py->willmore_crsital2.py",
+        "rbc_model_reconstruction_128.py->willmore_crsital2.py",
+        "willmore_zero_shot_scaler.py->willmore_crsital2.py",
+        "wilmore_rbc.py->willmore_crsital2.py"
+      ]
+    },
+    {
+      "source": "compute",
+      "target": "gaussian",
+      "verb": "depends_on",
+      "strength": 0.88,
+      "confidence": "INFERRED",
+      "evidence": [
+        "model_Reco.py->willmore_crsital2.py",
+        "rbc.py->willmore_crsital2.py",
+        "rbc_model_reconstruction (1).py->willmore_crsital2.py",
+        "rbc_model_reconstruction.py->willmore_crsital2.py",
+        "rbc_model_reconstruction_128.py->willmore_crsital2.py",
+        "willmore_zero_shot_scaler.py->willmore_crsital2.py",
+        "wilmore_rbc.py->willmore_crsital2.py"
+      ]
+    },
+    {
+      "source": "compute",
+      "target": "generator",
+      "verb": "depends_on",
+      "strength": 0.88,
+      "confidence": "INFERRED",
+      "evidence": [
+        "model_Reco.py->willmore_crsital2.py",
+        "rbc.py->willmore_crsital2.py",
+        "rbc_model_reconstruction (1).py->willmore_crsital2.py",
+        "rbc_model_reconstruction.py->willmore_crsital2.py",
+        "rbc_model_reconstruction_128.py->willmore_crsital2.py",
+        "willmore_zero_shot_scaler.py->willmore_crsital2.py",
+        "wilmore_rbc.py->willmore_crsital2.py"
+      ]
+    },
+    {
+      "source": "compute",
+      "target": "geometry",
+      "verb": "depends_on",
+      "strength": 0.88,
+      "confidence": "INFERRED",
+      "evidence": [
+        "model_Reco.py->willmore_crsital2.py",
+        "rbc.py->willmore_crsital2.py",
+        "rbc_model_reconstruction (1).py->willmore_crsital2.py",
+        "rbc_model_reconstruction.py->willmore_crsital2.py",
+        "rbc_model_reconstruction_128.py->willmore_crsital2.py",
+        "willmore_zero_shot_scaler.py->willmore_crsital2.py",
+        "wilmore_rbc.py->willmore_crsital2.py"
+      ]
+    },
+    {
+      "source": "compute",
+      "target": "layer",
+      "verb": "depends_on",
+      "strength": 0.88,
+      "confidence": "INFERRED",
+      "evidence": [
+        "model_Reco.py->willmore_crsital2.py",
+        "rbc.py->willmore_crsital2.py",
+        "rbc_model_reconstruction (1).py->willmore_crsital2.py",
+        "rbc_model_reconstruction.py->willmore_crsital2.py",
+        "rbc_model_reconstruction_128.py->willmore_crsital2.py",
+        "willmore_zero_shot_scaler.py->willmore_crsital2.py",
+        "wilmore_rbc.py->willmore_crsital2.py"
+      ]
+    },
+    {
+      "source": "compute",
+      "target": "load",
+      "verb": "depends_on",
+      "strength": 0.88,
+      "confidence": "INFERRED",
+      "evidence": [
+        "model_Reco.py->willmore_crsital2.py",
+        "rbc.py->willmore_crsital2.py",
+        "rbc_model_reconstruction (1).py->willmore_crsital2.py",
+        "rbc_model_reconstruction.py->willmore_crsital2.py",
+        "rbc_model_reconstruction_128.py->willmore_crsital2.py",
+        "willmore_zero_shot_scaler.py->willmore_crsital2.py",
+        "wilmore_rbc.py->willmore_crsital2.py"
+      ]
+    },
+    {
+      "source": "compute",
+      "target": "mean",
+      "verb": "depends_on",
+      "strength": 0.88,
+      "confidence": "INFERRED",
+      "evidence": [
+        "model_Reco.py->willmore_crsital2.py",
+        "rbc.py->willmore_crsital2.py",
+        "rbc_model_reconstruction (1).py->willmore_crsital2.py",
+        "rbc_model_reconstruction.py->willmore_crsital2.py",
+        "rbc_model_reconstruction_128.py->willmore_crsital2.py",
+        "willmore_zero_shot_scaler.py->willmore_crsital2.py",
+        "wilmore_rbc.py->willmore_crsital2.py"
+      ]
+    },
+    {
+      "source": "compute",
+      "target": "metrics",
+      "verb": "depends_on",
+      "strength": 0.88,
+      "confidence": "INFERRED",
+      "evidence": [
+        "model_Reco.py->willmore_crsital2.py",
+        "rbc.py->willmore_crsital2.py",
+        "rbc_model_reconstruction (1).py->willmore_crsital2.py",
+        "rbc_model_reconstruction.py->willmore_crsital2.py",
+        "rbc_model_reconstruction_128.py->willmore_crsital2.py",
+        "willmore_zero_shot_scaler.py->willmore_crsital2.py",
+        "wilmore_rbc.py->willmore_crsital2.py"
+      ]
+    },
+    {
+      "source": "compute",
+      "target": "minimal",
+      "verb": "depends_on",
+      "strength": 0.88,
+      "confidence": "INFERRED",
+      "evidence": [
+        "model_Reco.py->willmore_crsital2.py",
+        "rbc.py->willmore_crsital2.py",
+        "rbc_model_reconstruction (1).py->willmore_crsital2.py",
+        "rbc_model_reconstruction.py->willmore_crsital2.py",
+        "rbc_model_reconstruction_128.py->willmore_crsital2.py",
+        "willmore_zero_shot_scaler.py->willmore_crsital2.py",
+        "wilmore_rbc.py->willmore_crsital2.py"
+      ]
+    },
+    {
+      "source": "compute",
+      "target": "network",
+      "verb": "depends_on",
+      "strength": 0.88,
+      "confidence": "INFERRED",
+      "evidence": [
+        "model_Reco.py->willmore_crsital2.py",
+        "rbc.py->willmore_crsital2.py",
+        "rbc_model_reconstruction (1).py->willmore_crsital2.py",
+        "rbc_model_reconstruction.py->willmore_crsital2.py",
+        "rbc_model_reconstruction_128.py->willmore_crsital2.py",
+        "willmore_zero_shot_scaler.py->willmore_crsital2.py",
+        "wilmore_rbc.py->willmore_crsital2.py"
+      ]
+    },
+    {
+      "source": "compute",
+      "target": "operator",
+      "verb": "depends_on",
+      "strength": 0.88,
+      "confidence": "INFERRED",
+      "evidence": [
+        "model_Reco.py->willmore_crsital2.py",
+        "rbc.py->willmore_crsital2.py",
+        "rbc_model_reconstruction (1).py->willmore_crsital2.py",
+        "rbc_model_reconstruction.py->willmore_crsital2.py",
+        "rbc_model_reconstruction_128.py->willmore_crsital2.py",
+        "willmore_zero_shot_scaler.py->willmore_crsital2.py",
+        "wilmore_rbc.py->willmore_crsital2.py"
+      ]
+    },
+    {
+      "source": "compute",
+      "target": "run",
+      "verb": "depends_on",
+      "strength": 0.88,
+      "confidence": "INFERRED",
+      "evidence": [
+        "model_Reco.py->willmore_crsital2.py",
+        "rbc.py->willmore_crsital2.py",
+        "rbc_model_reconstruction (1).py->willmore_crsital2.py",
+        "rbc_model_reconstruction.py->willmore_crsital2.py",
+        "rbc_model_reconstruction_128.py->willmore_crsital2.py",
+        "willmore_zero_shot_scaler.py->willmore_crsital2.py",
+        "wilmore_rbc.py->willmore_crsital2.py"
+      ]
+    },
+    {
+      "source": "compute",
+      "target": "save",
+      "verb": "depends_on",
+      "strength": 0.88,
+      "confidence": "INFERRED",
+      "evidence": [
+        "model_Reco.py->willmore_crsital2.py",
+        "rbc.py->willmore_crsital2.py",
+        "rbc_model_reconstruction (1).py->willmore_crsital2.py",
+        "rbc_model_reconstruction.py->willmore_crsital2.py",
+        "rbc_model_reconstruction_128.py->willmore_crsital2.py",
+        "willmore_zero_shot_scaler.py->willmore_crsital2.py",
+        "wilmore_rbc.py->willmore_crsital2.py"
+      ]
+    },
+    {
+      "source": "compute",
+      "target": "spectral",
+      "verb": "depends_on",
+      "strength": 0.88,
+      "confidence": "INFERRED",
+      "evidence": [
+        "model_Reco.py->willmore_crsital2.py",
+        "rbc.py->willmore_crsital2.py",
+        "rbc_model_reconstruction (1).py->willmore_crsital2.py",
+        "rbc_model_reconstruction.py->willmore_crsital2.py",
+        "rbc_model_reconstruction_128.py->willmore_crsital2.py",
+        "willmore_zero_shot_scaler.py->willmore_crsital2.py",
+        "wilmore_rbc.py->willmore_crsital2.py"
+      ]
+    },
+    {
+      "source": "compute",
+      "target": "surface",
+      "verb": "depends_on",
+      "strength": 0.88,
+      "confidence": "INFERRED",
+      "evidence": [
+        "model_Reco.py->willmore_crsital2.py",
+        "rbc.py->willmore_crsital2.py",
+        "rbc_model_reconstruction (1).py->willmore_crsital2.py",
+        "rbc_model_reconstruction.py->willmore_crsital2.py",
+        "rbc_model_reconstruction_128.py->willmore_crsital2.py",
+        "willmore_zero_shot_scaler.py->willmore_crsital2.py",
+        "wilmore_rbc.py->willmore_crsital2.py"
+      ]
+    },
+    {
+      "source": "compute",
+      "target": "willmore",
+      "verb": "depends_on",
+      "strength": 0.88,
+      "confidence": "INFERRED",
+      "evidence": [
+        "model_Reco.py->willmore_crsital2.py",
+        "rbc.py->willmore_crsital2.py",
+        "rbc_model_reconstruction (1).py->willmore_crsital2.py",
+        "rbc_model_reconstruction.py->willmore_crsital2.py",
+        "rbc_model_reconstruction_128.py->willmore_crsital2.py",
+        "willmore_zero_shot_scaler.py->willmore_crsital2.py",
+        "wilmore_rbc.py->willmore_crsital2.py"
+      ]
+    },
+    {
+      "source": "save",
+      "target": "all",
+      "verb": "depends_on",
+      "strength": 0.88,
+      "confidence": "INFERRED",
+      "evidence": [
+        "model_Reco.py->willmore_crsital2.py",
+        "rbc.py->willmore_crsital2.py",
+        "rbc_model_reconstruction (1).py->willmore_crsital2.py",
+        "rbc_model_reconstruction.py->willmore_crsital2.py",
+        "rbc_model_reconstruction_128.py->willmore_crsital2.py",
+        "willmore_zero_shot_scaler.py->willmore_crsital2.py",
+        "wilmore_rbc.py->willmore_crsital2.py"
+      ]
+    },
+    {
+      "source": "save",
+      "target": "area",
+      "verb": "depends_on",
+      "strength": 0.88,
+      "confidence": "INFERRED",
+      "evidence": [
+        "model_Reco.py->willmore_crsital2.py",
+        "rbc.py->willmore_crsital2.py",
+        "rbc_model_reconstruction (1).py->willmore_crsital2.py",
+        "rbc_model_reconstruction.py->willmore_crsital2.py",
+        "rbc_model_reconstruction_128.py->willmore_crsital2.py",
+        "willmore_zero_shot_scaler.py->willmore_crsital2.py",
+        "wilmore_rbc.py->willmore_crsital2.py"
+      ]
+    },
+    {
+      "source": "save",
+      "target": "calculator",
+      "verb": "depends_on",
+      "strength": 0.88,
+      "confidence": "INFERRED",
+      "evidence": [
+        "model_Reco.py->willmore_crsital2.py",
+        "rbc.py->willmore_crsital2.py",
+        "rbc_model_reconstruction (1).py->willmore_crsital2.py",
+        "rbc_model_reconstruction.py->willmore_crsital2.py",
+        "rbc_model_reconstruction_128.py->willmore_crsital2.py",
+        "willmore_zero_shot_scaler.py->willmore_crsital2.py",
+        "wilmore_rbc.py->willmore_crsital2.py"
+      ]
+    },
+    {
+      "source": "save",
+      "target": "checkpoint",
+      "verb": "depends_on",
+      "strength": 0.88,
+      "confidence": "INFERRED",
+      "evidence": [
+        "model_Reco.py->willmore_crsital2.py",
+        "rbc.py->willmore_crsital2.py",
+        "rbc_model_reconstruction (1).py->willmore_crsital2.py",
+        "rbc_model_reconstruction.py->willmore_crsital2.py",
+        "rbc_model_reconstruction_128.py->willmore_crsital2.py",
+        "willmore_zero_shot_scaler.py->willmore_crsital2.py",
+        "wilmore_rbc.py->willmore_crsital2.py"
+      ]
+    },
+    {
+      "source": "save",
+      "target": "compute",
+      "verb": "depends_on",
+      "strength": 0.88,
+      "confidence": "INFERRED",
+      "evidence": [
+        "model_Reco.py->willmore_crsital2.py",
+        "rbc.py->willmore_crsital2.py",
+        "rbc_model_reconstruction (1).py->willmore_crsital2.py",
+        "rbc_model_reconstruction.py->willmore_crsital2.py",
+        "rbc_model_reconstruction_128.py->willmore_crsital2.py",
+        "willmore_zero_shot_scaler.py->willmore_crsital2.py",
+        "wilmore_rbc.py->willmore_crsital2.py"
+      ]
+    },
+    {
+      "source": "save",
+      "target": "config",
+      "verb": "depends_on",
+      "strength": 0.88,
+      "confidence": "INFERRED",
+      "evidence": [
+        "model_Reco.py->willmore_crsital2.py",
+        "rbc.py->willmore_crsital2.py",
+        "rbc_model_reconstruction (1).py->willmore_crsital2.py",
+        "rbc_model_reconstruction.py->willmore_crsital2.py",
+        "rbc_model_reconstruction_128.py->willmore_crsital2.py",
+        "willmore_zero_shot_scaler.py->willmore_crsital2.py",
+        "wilmore_rbc.py->willmore_crsital2.py"
+      ]
+    },
+    {
+      "source": "save",
+      "target": "create",
+      "verb": "depends_on",
+      "strength": 0.88,
+      "confidence": "INFERRED",
+      "evidence": [
+        "model_Reco.py->willmore_crsital2.py",
+        "rbc.py->willmore_crsital2.py",
+        "rbc_model_reconstruction (1).py->willmore_crsital2.py",
+        "rbc_model_reconstruction.py->willmore_crsital2.py",
+        "rbc_model_reconstruction_128.py->willmore_crsital2.py",
+        "willmore_zero_shot_scaler.py->willmore_crsital2.py",
+        "wilmore_rbc.py->willmore_crsital2.py"
+      ]
+    },
+    {
+      "source": "save",
+      "target": "curvature",
+      "verb": "depends_on",
+      "strength": 0.88,
+      "confidence": "INFERRED",
+      "evidence": [
+        "model_Reco.py->willmore_crsital2.py",
+        "rbc.py->willmore_crsital2.py",
+        "rbc_model_reconstruction (1).py->willmore_crsital2.py",
+        "rbc_model_reconstruction.py->willmore_crsital2.py",
+        "rbc_model_reconstruction_128.py->willmore_crsital2.py",
+        "willmore_zero_shot_scaler.py->willmore_crsital2.py",
+        "wilmore_rbc.py->willmore_crsital2.py"
+      ]
+    },
+    {
+      "source": "save",
+      "target": "energy",
+      "verb": "depends_on",
+      "strength": 0.88,
+      "confidence": "INFERRED",
+      "evidence": [
+        "model_Reco.py->willmore_crsital2.py",
+        "rbc.py->willmore_crsital2.py",
+        "rbc_model_reconstruction (1).py->willmore_crsital2.py",
+        "rbc_model_reconstruction.py->willmore_crsital2.py",
+        "rbc_model_reconstruction_128.py->willmore_crsital2.py",
+        "willmore_zero_shot_scaler.py->willmore_crsital2.py",
+        "wilmore_rbc.py->willmore_crsital2.py"
+      ]
+    },
+    {
+      "source": "save",
+      "target": "forward",
+      "verb": "depends_on",
+      "strength": 0.88,
+      "confidence": "INFERRED",
+      "evidence": [
+        "model_Reco.py->willmore_crsital2.py",
+        "rbc.py->willmore_crsital2.py",
+        "rbc_model_reconstruction (1).py->willmore_crsital2.py",
+        "rbc_model_reconstruction.py->willmore_crsital2.py",
+        "rbc_model_reconstruction_128.py->willmore_crsital2.py",
+        "willmore_zero_shot_scaler.py->willmore_crsital2.py",
+        "wilmore_rbc.py->willmore_crsital2.py"
+      ]
+    },
+    {
+      "source": "save",
+      "target": "gaussian",
+      "verb": "depends_on",
+      "strength": 0.88,
+      "confidence": "INFERRED",
+      "evidence": [
+        "model_Reco.py->willmore_crsital2.py",
+        "rbc.py->willmore_crsital2.py",
+        "rbc_model_reconstruction (1).py->willmore_crsital2.py",
+        "rbc_model_reconstruction.py->willmore_crsital2.py",
+        "rbc_model_reconstruction_128.py->willmore_crsital2.py",
+        "willmore_zero_shot_scaler.py->willmore_crsital2.py",
+        "wilmore_rbc.py->willmore_crsital2.py"
+      ]
+    },
+    {
+      "source": "save",
+      "target": "generator",
+      "verb": "depends_on",
+      "strength": 0.88,
+      "confidence": "INFERRED",
+      "evidence": [
+        "model_Reco.py->willmore_crsital2.py",
+        "rbc.py->willmore_crsital2.py",
+        "rbc_model_reconstruction (1).py->willmore_crsital2.py",
+        "rbc_model_reconstruction.py->willmore_crsital2.py",
+        "rbc_model_reconstruction_128.py->willmore_crsital2.py",
+        "willmore_zero_shot_scaler.py->willmore_crsital2.py",
+        "wilmore_rbc.py->willmore_crsital2.py"
+      ]
+    },
+    {
+      "source": "save",
+      "target": "geometry",
+      "verb": "depends_on",
+      "strength": 0.88,
+      "confidence": "INFERRED",
+      "evidence": [
+        "model_Reco.py->willmore_crsital2.py",
+        "rbc.py->willmore_crsital2.py",
+        "rbc_model_reconstruction (1).py->willmore_crsital2.py",
+        "rbc_model_reconstruction.py->willmore_crsital2.py",
+        "rbc_model_reconstruction_128.py->willmore_crsital2.py",
+        "willmore_zero_shot_scaler.py->willmore_crsital2.py",
+        "wilmore_rbc.py->willmore_crsital2.py"
+      ]
+    },
+    {
+      "source": "save",
+      "target": "layer",
+      "verb": "depends_on",
+      "strength": 0.88,
+      "confidence": "INFERRED",
+      "evidence": [
+        "model_Reco.py->willmore_crsital2.py",
+        "rbc.py->willmore_crsital2.py",
+        "rbc_model_reconstruction (1).py->willmore_crsital2.py",
+        "rbc_model_reconstruction.py->willmore_crsital2.py",
+        "rbc_model_reconstruction_128.py->willmore_crsital2.py",
+        "willmore_zero_shot_scaler.py->willmore_crsital2.py",
+        "wilmore_rbc.py->willmore_crsital2.py"
+      ]
+    },
+    {
+      "source": "save",
+      "target": "load",
+      "verb": "depends_on",
+      "strength": 0.88,
+      "confidence": "INFERRED",
+      "evidence": [
+        "model_Reco.py->willmore_crsital2.py",
+        "rbc.py->willmore_crsital2.py",
+        "rbc_model_reconstruction (1).py->willmore_crsital2.py",
+        "rbc_model_reconstruction.py->willmore_crsital2.py",
+        "rbc_model_reconstruction_128.py->willmore_crsital2.py",
+        "willmore_zero_shot_scaler.py->willmore_crsital2.py",
+        "wilmore_rbc.py->willmore_crsital2.py"
+      ]
+    },
+    {
+      "source": "save",
+      "target": "mean",
+      "verb": "depends_on",
+      "strength": 0.88,
+      "confidence": "INFERRED",
+      "evidence": [
+        "model_Reco.py->willmore_crsital2.py",
+        "rbc.py->willmore_crsital2.py",
+        "rbc_model_reconstruction (1).py->willmore_crsital2.py",
+        "rbc_model_reconstruction.py->willmore_crsital2.py",
+        "rbc_model_reconstruction_128.py->willmore_crsital2.py",
+        "willmore_zero_shot_scaler.py->willmore_crsital2.py",
+        "wilmore_rbc.py->willmore_crsital2.py"
+      ]
+    },
+    {
+      "source": "save",
+      "target": "metrics",
+      "verb": "depends_on",
+      "strength": 0.88,
+      "confidence": "INFERRED",
+      "evidence": [
+        "model_Reco.py->willmore_crsital2.py",
+        "rbc.py->willmore_crsital2.py",
+        "rbc_model_reconstruction (1).py->willmore_crsital2.py",
+        "rbc_model_reconstruction.py->willmore_crsital2.py",
+        "rbc_model_reconstruction_128.py->willmore_crsital2.py",
+        "willmore_zero_shot_scaler.py->willmore_crsital2.py",
+        "wilmore_rbc.py->willmore_crsital2.py"
+      ]
+    },
+    {
+      "source": "save",
+      "target": "minimal",
+      "verb": "depends_on",
+      "strength": 0.88,
+      "confidence": "INFERRED",
+      "evidence": [
+        "model_Reco.py->willmore_crsital2.py",
+        "rbc.py->willmore_crsital2.py",
+        "rbc_model_reconstruction (1).py->willmore_crsital2.py",
+        "rbc_model_reconstruction.py->willmore_crsital2.py",
+        "rbc_model_reconstruction_128.py->willmore_crsital2.py",
+        "willmore_zero_shot_scaler.py->willmore_crsital2.py",
+        "wilmore_rbc.py->willmore_crsital2.py"
+      ]
+    },
+    {
+      "source": "save",
+      "target": "network",
+      "verb": "depends_on",
+      "strength": 0.88,
+      "confidence": "INFERRED",
+      "evidence": [
+        "model_Reco.py->willmore_crsital2.py",
+        "rbc.py->willmore_crsital2.py",
+        "rbc_model_reconstruction (1).py->willmore_crsital2.py",
+        "rbc_model_reconstruction.py->willmore_crsital2.py",
+        "rbc_model_reconstruction_128.py->willmore_crsital2.py",
+        "willmore_zero_shot_scaler.py->willmore_crsital2.py",
+        "wilmore_rbc.py->willmore_crsital2.py"
+      ]
+    },
+    {
+      "source": "save",
+      "target": "operator",
+      "verb": "depends_on",
+      "strength": 0.88,
+      "confidence": "INFERRED",
+      "evidence": [
+        "model_Reco.py->willmore_crsital2.py",
+        "rbc.py->willmore_crsital2.py",
+        "rbc_model_reconstruction (1).py->willmore_crsital2.py",
+        "rbc_model_reconstruction.py->willmore_crsital2.py",
+        "rbc_model_reconstruction_128.py->willmore_crsital2.py",
+        "willmore_zero_shot_scaler.py->willmore_crsital2.py",
+        "wilmore_rbc.py->willmore_crsital2.py"
+      ]
+    },
+    {
+      "source": "save",
+      "target": "run",
+      "verb": "depends_on",
+      "strength": 0.88,
+      "confidence": "INFERRED",
+      "evidence": [
+        "model_Reco.py->willmore_crsital2.py",
+        "rbc.py->willmore_crsital2.py",
+        "rbc_model_reconstruction (1).py->willmore_crsital2.py",
+        "rbc_model_reconstruction.py->willmore_crsital2.py",
+        "rbc_model_reconstruction_128.py->willmore_crsital2.py",
+        "willmore_zero_shot_scaler.py->willmore_crsital2.py",
+        "wilmore_rbc.py->willmore_crsital2.py"
+      ]
+    },
+    {
+      "source": "save",
+      "target": "spectral",
+      "verb": "depends_on",
+      "strength": 0.88,
+      "confidence": "INFERRED",
+      "evidence": [
+        "model_Reco.py->willmore_crsital2.py",
+        "rbc.py->willmore_crsital2.py",
+        "rbc_model_reconstruction (1).py->willmore_crsital2.py",
+        "rbc_model_reconstruction.py->willmore_crsital2.py",
+        "rbc_model_reconstruction_128.py->willmore_crsital2.py",
+        "willmore_zero_shot_scaler.py->willmore_crsital2.py",
+        "wilmore_rbc.py->willmore_crsital2.py"
+      ]
+    },
+    {
+      "source": "save",
+      "target": "surface",
+      "verb": "depends_on",
+      "strength": 0.88,
+      "confidence": "INFERRED",
+      "evidence": [
+        "model_Reco.py->willmore_crsital2.py",
+        "rbc.py->willmore_crsital2.py",
+        "rbc_model_reconstruction (1).py->willmore_crsital2.py",
+        "rbc_model_reconstruction.py->willmore_crsital2.py",
+        "rbc_model_reconstruction_128.py->willmore_crsital2.py",
+        "willmore_zero_shot_scaler.py->willmore_crsital2.py",
+        "wilmore_rbc.py->willmore_crsital2.py"
+      ]
+    },
+    {
+      "source": "save",
+      "target": "willmore",
+      "verb": "depends_on",
+      "strength": 0.88,
+      "confidence": "INFERRED",
+      "evidence": [
+        "model_Reco.py->willmore_crsital2.py",
+        "rbc.py->willmore_crsital2.py",
+        "rbc_model_reconstruction (1).py->willmore_crsital2.py",
+        "rbc_model_reconstruction.py->willmore_crsital2.py",
+        "rbc_model_reconstruction_128.py->willmore_crsital2.py",
+        "willmore_zero_shot_scaler.py->willmore_crsital2.py",
+        "wilmore_rbc.py->willmore_crsital2.py"
+      ]
+    },
+    {
+      "source": "using",
+      "target": "all",
+      "verb": "depends_on",
+      "strength": 0.88,
+      "confidence": "INFERRED",
+      "evidence": [
+        "model_Reco.py->willmore_crsital2.py",
+        "rbc.py->willmore_crsital2.py",
+        "rbc_model_reconstruction (1).py->willmore_crsital2.py",
+        "rbc_model_reconstruction.py->willmore_crsital2.py",
+        "rbc_model_reconstruction_128.py->willmore_crsital2.py",
+        "willmore_zero_shot_scaler.py->willmore_crsital2.py",
+        "wilmore_rbc.py->willmore_crsital2.py"
+      ]
+    },
+    {
+      "source": "using",
+      "target": "area",
+      "verb": "depends_on",
+      "strength": 0.88,
+      "confidence": "INFERRED",
+      "evidence": [
+        "model_Reco.py->willmore_crsital2.py",
+        "rbc.py->willmore_crsital2.py",
+        "rbc_model_reconstruction (1).py->willmore_crsital2.py",
+        "rbc_model_reconstruction.py->willmore_crsital2.py",
+        "rbc_model_reconstruction_128.py->willmore_crsital2.py",
+        "willmore_zero_shot_scaler.py->willmore_crsital2.py",
+        "wilmore_rbc.py->willmore_crsital2.py"
+      ]
+    },
+    {
+      "source": "using",
+      "target": "calculator",
+      "verb": "depends_on",
+      "strength": 0.88,
+      "confidence": "INFERRED",
+      "evidence": [
+        "model_Reco.py->willmore_crsital2.py",
+        "rbc.py->willmore_crsital2.py",
+        "rbc_model_reconstruction (1).py->willmore_crsital2.py",
+        "rbc_model_reconstruction.py->willmore_crsital2.py",
+        "rbc_model_reconstruction_128.py->willmore_crsital2.py",
+        "willmore_zero_shot_scaler.py->willmore_crsital2.py",
+        "wilmore_rbc.py->willmore_crsital2.py"
+      ]
+    }
+  ],
+  "dialectic": [
+    "Thesis: `all` centralizes 7 files; Antithesis: `area` pulls 6 files with 4 shared (Jaccard 0.44); Synthesis: should they merge, split by layer, or keep `bridges` explicit?",
+    "Thesis: `all` centralizes 7 files; Antithesis: `biconcave` pulls 6 files with 4 shared (Jaccard 0.44); Synthesis: should they merge, split by layer, or keep `bridges` explicit?",
+    "Thesis: `all` centralizes 7 files; Antithesis: `blood` pulls 7 files with 5 shared (Jaccard 0.56); Synthesis: should they merge, split by layer, or keep `bridges` explicit?",
+    "Thesis: `all` centralizes 7 files; Antithesis: `calculator` pulls 6 files with 4 shared (Jaccard 0.44); Synthesis: should they merge, split by layer, or keep `bridges` explicit?",
+    "Thesis: `all` centralizes 7 files; Antithesis: `cell` pulls 7 files with 5 shared (Jaccard 0.56); Synthesis: should they merge, split by layer, or keep `bridges` explicit?",
+    "Thesis: `all` centralizes 7 files; Antithesis: `checkpoint` pulls 10 files with 7 shared (Jaccard 0.70); Synthesis: should they merge, split by layer, or keep `bridges` explicit?",
+    "Thesis: `all` centralizes 7 files; Antithesis: `comparison` pulls 7 files with 5 shared (Jaccard 0.56); Synthesis: should they merge, split by layer, or keep `bridges` explicit?",
+    "Thesis: `all` centralizes 7 files; Antithesis: `compute` pulls 12 files with 7 shared (Jaccard 0.58); Synthesis: should they merge, split by layer, or keep `depends_on` explicit?",
+    "Thesis: `all` centralizes 7 files; Antithesis: `config` pulls 7 files with 4 shared (Jaccard 0.40); Synthesis: should they merge, split by layer, or keep `bridges` explicit?",
+    "Thesis: `all` centralizes 7 files; Antithesis: `configuration` pulls 6 files with 3 shared (Jaccard 0.30); Synthesis: should they merge, split by layer, or keep `bridges` explicit?"
+  ]
+}
